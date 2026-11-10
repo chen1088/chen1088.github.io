@@ -2,13 +2,13 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="590.4pt" height="288pt" viewBox="0 0 590.4 288" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <title>Any_01 closure: certified maximum shortest identity lengths</title>
+ <title>Champion directed graphs: shortest identity lengths of their induced DFA families</title>
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:title>Any_01 closure: certified maximum shortest identity lengths</dc:title>
-    <dc:description>m = 1, 2, 3, 4, 5, 6, 7; lengths = 1, 3, 6, 10, 15, 23, 34. Length of either word in a shortest rooted equal-length identity.</dc:description>
+    <dc:title>Champion directed graphs: shortest identity lengths of their induced DFA families</dc:title>
+    <dc:description>m = 1, 2, 3, 4, 5, 6, 7; lengths = 1, 3, 6, 10, 15, 23, 34. Number of graph vertices versus the length of either word in a shortest rooted equal-length identity of the induced DFA family.</dc:description>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -83,7 +83,7 @@ z
      </g>
     </g>
     <g id="text_8">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #22292e" x="316.021719" y="282.712104" transform="rotate(-0 316.021719 282.712104)">Number of states, m</text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #22292e" x="316.021719" y="282.712104" transform="rotate(-0 316.021719 282.712104)">Number of vertices, m</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">

@@ -1,6 +1,6 @@
 {
   "name": "Any_01 closure",
-  "definition": "All DFAs obtained by independently swapping the 0/1 labels at each state of a rooted graph; swaps remain fixed on revisits.",
+  "definition": "Assign 0 and 1 to the two outgoing edges independently at every vertex of a rooted directed graph. All choices induce the Any_01 closure of DFAs; each labeling remains fixed throughout a run.",
   "identity_definition": "Distinct equal-length words that reach the same state from root 0 in every DFA of the closure. The plotted length is the length of either word.",
   "source": "https://github.com/chen1088/AutomataAnalysis/blob/353d325bb118f8507caab8e564adfabc053ccddb/figures/family1-atlas/graphs.jsonl",
   "certified_maxima": [
@@ -193,5 +193,7 @@
         "1101010011001001101111100001010000"
       ]
     }
-  ]
+  ],
+  "graph_type": "Rooted directed graph with two outgoing edge occurrences at every vertex.",
+  "plotted_quantity": "The maximum shortest rooted equal-length identity length of the induced DFA family, over graphs with m vertices."
 }
