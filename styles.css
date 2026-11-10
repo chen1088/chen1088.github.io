@@ -82,7 +82,10 @@ footer { border-top: 1px solid var(--rule); padding-top: 19px; margin-top: 50px;
 #drawings { container-type: inline-size; }
 #drawings > h2 { margin-bottom: 8px; }
 .drawing-title { margin: 0 0 8px; font-size: 17px; line-height: 1.4; font-weight: 600; }
-.drawing-intro { margin-bottom: 14px; font-size: 14px; line-height: 1.6; }
+.drawing-intro { margin-bottom: 5px; font-size: 14px; line-height: 1.6; }
+.drawing-legend { margin: 0 0 12px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+.drawing-change-key { color: #a96216; font-weight: 600; }
+.drawing-edit { display: block; margin-top: 2px; font-size: 11px; color: var(--muted); }
 .drawing-gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px 10px; }
 .drawing-gallery figure { margin: 0; min-width: 0; }
 .drawing-image { display: block; line-height: 0; border: 1px solid var(--rule); background: #fff; }

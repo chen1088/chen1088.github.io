@@ -36,6 +36,54 @@
       "witness": [
         "010",
         "100"
+      ],
+      "source_index": 1,
+      "source_key": "00010001",
+      "canonical_to_display": [
+        0,
+        1
+      ],
+      "display_adjacency": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "new_display_vertex": null,
+      "existing_edge_redirects": null,
+      "common_edges": [],
+      "removed_edges": [],
+      "added_edges": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "display_positions": [
+        [
+          95,
+          210
+        ],
+        [
+          425,
+          210
+        ]
       ]
     },
     {
@@ -59,6 +107,77 @@
       "witness": [
         "000100",
         "010000"
+      ],
+      "source_index": 1,
+      "source_key": "000101020001",
+      "canonical_to_display": [
+        0,
+        1,
+        2
+      ],
+      "display_adjacency": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "new_display_vertex": 2,
+      "existing_edge_redirects": 1,
+      "common_edges": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "removed_edges": [
+        [
+          1,
+          0
+        ]
+      ],
+      "added_edges": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "display_positions": [
+        [
+          95,
+          210
+        ],
+        [
+          425,
+          210
+        ],
+        [
+          255,
+          335
+        ]
       ]
     },
     {
@@ -86,6 +205,98 @@
       "witness": [
         "0000010001",
         "0010000001"
+      ],
+      "source_index": 1,
+      "source_key": "0102000201030003",
+      "canonical_to_display": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "display_adjacency": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "new_display_vertex": 3,
+      "existing_edge_redirects": 2,
+      "common_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "removed_edges": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "added_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "display_positions": [
+        [
+          95,
+          210
+        ],
+        [
+          425,
+          210
+        ],
+        [
+          255,
+          335
+        ],
+        [
+          255,
+          85
+        ]
       ]
     },
     {
@@ -93,7 +304,43 @@
       "shortest_identity_length": 15,
       "canonical_table": [
         [
+          1,
+          2
+        ],
+        [
           0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "maximum_certified": true,
+      "witness": [
+        "000000000010001",
+        "000010000000001"
+      ],
+      "source_index": 4,
+      "source_key": "01020003010402030104",
+      "canonical_to_display": [
+        0,
+        2,
+        1,
+        4,
+        3
+      ],
+      "display_adjacency": [
+        [
+          2,
           1
         ],
         [
@@ -102,21 +349,94 @@
         ],
         [
           0,
-          1
-        ],
-        [
-          3,
           4
         ],
         [
           2,
+          3
+        ],
+        [
+          1,
           4
         ]
       ],
-      "maximum_certified": true,
-      "witness": [
-        "000011011000011",
-        "001101100000011"
+      "new_display_vertex": 4,
+      "existing_edge_redirects": 2,
+      "common_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "removed_edges": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "added_edges": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "display_positions": [
+        [
+          95,
+          210
+        ],
+        [
+          425,
+          210
+        ],
+        [
+          255,
+          335
+        ],
+        [
+          255,
+          85
+        ],
+        [
+          425,
+          335
+        ]
       ]
     },
     {
@@ -124,20 +444,20 @@
       "shortest_identity_length": 23,
       "canonical_table": [
         [
+          1,
+          2
+        ],
+        [
           0,
-          1
+          3
+        ],
+        [
+          4,
+          5
         ],
         [
           2,
           3
-        ],
-        [
-          3,
-          4
-        ],
-        [
-          2,
-          5
         ],
         [
           0,
@@ -150,8 +470,134 @@
       ],
       "maximum_certified": true,
       "witness": [
-        "00000011010100000010110",
-        "00110101000000000010110"
+        "01001111001000111011110",
+        "01010100001000111011110"
+      ],
+      "source_index": 2,
+      "source_key": "010200030405020300010405",
+      "canonical_to_display": [
+        0,
+        2,
+        1,
+        4,
+        3,
+        5
+      ],
+      "display_adjacency": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "new_display_vertex": 5,
+      "existing_edge_redirects": 2,
+      "common_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "removed_edges": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "added_edges": [
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "display_positions": [
+        [
+          95,
+          210
+        ],
+        [
+          425,
+          210
+        ],
+        [
+          255,
+          335
+        ],
+        [
+          255,
+          85
+        ],
+        [
+          425,
+          335
+        ],
+        [
+          425,
+          85
+        ]
       ]
     },
     {
@@ -159,42 +605,240 @@
       "shortest_identity_length": 34,
       "canonical_table": [
         [
+          1,
+          2
+        ],
+        [
           0,
-          1
-        ],
-        [
-          2,
-          3
-        ],
-        [
-          2,
           3
         ],
         [
           4,
           5
-        ],
-        [
-          0,
-          6
-        ],
-        [
-          4,
-          6
         ],
         [
           1,
+          6
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
           5
+        ],
+        [
+          2,
+          6
         ]
       ],
       "maximum_certified": true,
       "witness": [
-        "0010100011001001101111100001010000",
-        "1101010011001001101111100001010000"
+        "0001100000000000000110001100001111",
+        "0001100110000000000000001100001111"
+      ],
+      "source_index": 4,
+      "source_key": "0102000304050106000304050206",
+      "canonical_to_display": [
+        0,
+        2,
+        1,
+        6,
+        3,
+        5,
+        4
+      ],
+      "display_adjacency": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "new_display_vertex": 6,
+      "existing_edge_redirects": 2,
+      "common_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "removed_edges": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "added_edges": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "display_positions": [
+        [
+          95,
+          210
+        ],
+        [
+          425,
+          210
+        ],
+        [
+          255,
+          335
+        ],
+        [
+          255,
+          85
+        ],
+        [
+          425,
+          335
+        ],
+        [
+          425,
+          85
+        ],
+        [
+          340,
+          335
+        ]
       ]
     }
   ],
   "graph_type": "Rooted directed graph with two outgoing edge occurrences at every vertex.",
   "plotted_quantity": "The maximum shortest rooted equal-length identity length of the induced DFA family, over graphs with m vertices.",
-  "notation": "\\forall_{01}"
+  "notation": "\\forall_{01}",
+  "graph_alignment": {
+    "selection": "Minimum total retarget count over all certified rooted champions of sizes 2 through 7 and all consecutive root-preserving injective matchings. Lexicographic champion-key and mapping tie breaks.",
+    "edit_metric": "The retarget count is the number of outgoing edge destinations changed at retained vertices after an injective root-preserving vertex matching. The new vertex and its two outgoing edges are recorded separately.",
+    "total_existing_edge_redirects": 9,
+    "vertex_labels": "Birth order: each step adds the next integer label; root 0 stays fixed.",
+    "coordinates": "All drawings share one canvas and fixed coordinates for retained vertices.",
+    "highlights": "Amber marks the newly added vertex and all edges absent from the preceding graph; no removed edge is drawn.",
+    "canvas": {
+      "width": 520,
+      "height": 430,
+      "positions": [
+        [
+          95,
+          210
+        ],
+        [
+          425,
+          210
+        ],
+        [
+          255,
+          335
+        ],
+        [
+          255,
+          85
+        ],
+        [
+          425,
+          335
+        ],
+        [
+          425,
+          85
+        ],
+        [
+          340,
+          335
+        ]
+      ],
+      "radii": [
+        20,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18
+      ],
+      "colors": {
+        "unchanged": "#35586b",
+        "new": "#b0681d"
+      }
+    }
+  }
 }

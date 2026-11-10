@@ -1,35 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="520" height="430" viewBox="0 0 520 430" role="img" aria-labelledby="title desc">
-<title id="title">Champion rooted directed graph: 6 vertices; induced DFA family shortest identity length 23</title>
-<desc id="desc">An unlabeled directed graph with two outgoing edges per vertex. The shaded vertex 0 is the root. Assigning 0 and 1 to outgoing edges independently at each vertex induces the ∀₀₁ closure of DFAs.</desc>
-<metadata>{&quot;m&quot;:6,&quot;shortest_identity_length&quot;:23,&quot;root&quot;:0,&quot;canonical_table&quot;:[[0,1],[2,3],[3,4],[2,5],[0,1],[4,5]],&quot;source_repository&quot;:&quot;chen1088/AutomataAnalysis&quot;,&quot;source_commit&quot;:&quot;353d325bb118f8507caab8e564adfabc053ccddb&quot;,&quot;source_path&quot;:&quot;figures/family1-atlas/graphs.jsonl&quot;}</metadata>
+<title id="title">Champion directed graph with 6 vertices, ∀₀₁ closure identity length 23</title>
+<desc id="desc">Vertices retain the same labels and positions in every drawing. The shaded vertex 0 is the root. Amber marks the vertex and edges added since the preceding drawing. All edges shown belong to this directed graph.</desc>
+<metadata>{&quot;name&quot;:&quot;\u2200\u2080\u2081 closure champion directed graph&quot;,&quot;m&quot;:6,&quot;shortest_identity_length&quot;:23,&quot;root&quot;:0,&quot;display_adjacency&quot;:[[2,1],[3,5],[0,4],[0,2],[1,4],[3,5]],&quot;canonical_to_display&quot;:[0,2,1,4,3,5],&quot;canonical_table&quot;:[[1,2],[0,3],[4,5],[2,3],[0,1],[4,5]],&quot;source_repository&quot;:&quot;chen1088/AutomataAnalysis&quot;,&quot;source_commit&quot;:&quot;353d325bb118f8507caab8e564adfabc053ccddb&quot;,&quot;source_path&quot;:&quot;figures/family1-atlas/graphs.jsonl&quot;,&quot;positions&quot;:[[95,210],[425,210],[255,335],[255,85],[425,335],[425,85]],&quot;retargeted_old_edges&quot;:2,&quot;removed_edges&quot;:[[1,2],[3,3]],&quot;added_edges&quot;:[[1,5],[3,0],[5,3],[5,5]]}</metadata>
 <defs>
-<marker id="arrow0" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#245a80"/></marker>
-<marker id="arrow1" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#245a80"/></marker>
+<marker id="arrow-base" markerWidth="10" markerHeight="9" refX="9" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#35586b"/></marker>
+<marker id="arrow-new" markerWidth="10" markerHeight="9" refX="9" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#b0681d"/></marker>
 </defs>
-<g transform="translate(27.3246 2.9615) scale(0.93899)" font-family="system-ui,-apple-system,Segoe UI,sans-serif">
-<path class="edge" data-source="0" data-port="0" data-target="0" d="M 258.439,80.362 C 209.318,84.110 295.292,26.665 272.594,66.637" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow0)"/>
-<path class="edge" data-source="0" data-port="1" data-target="1" d="M 285.205,105.588 Q 313.954,151.347 331.715,201.325" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow1)"/>
-<path class="edge" data-source="1" data-port="0" data-target="2" d="M 342.196,235.717 Q 351.321,273.210 368.892,303.001" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow0)"/>
-<path class="edge" data-source="1" data-port="1" data-target="3" d="M 334.813,235.761 Q 318.862,304.845 292.115,366.168" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow1)"/>
-<path class="edge" data-source="2" data-port="0" data-target="3" d="M 363.588,324.333 Q 320.374,335.803 296.063,368.458" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow0)"/>
-<path class="edge" data-source="2" data-port="1" data-target="4" d="M 364.505,313.569 Q 302.002,284.958 249.251,247.428" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow1)"/>
-<path class="edge" data-source="3" data-port="0" data-target="2" d="M 299.584,380.395 Q 342.799,368.925 367.110,336.270" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow0)"/>
-<path class="edge" data-source="3" data-port="1" data-target="5" d="M 268.120,384.586 Q 211.693,384.889 160.483,373.653" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow1)"/>
-<path class="edge" data-source="4" data-port="0" data-target="0" d="M 238.965,221.006 Q 261.714,164.881 271.077,112.146" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow0)"/>
-<path class="edge" data-source="4" data-port="1" data-target="1" d="M 248.257,231.160 Q 284.508,220.089 318.412,220.140" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow1)"/>
-<path class="edge" data-source="5" data-port="0" data-target="4" d="M 151.275,357.146 Q 193.539,307.139 223.279,253.338" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow0)"/>
-<path class="edge" data-source="5" data-port="1" data-target="5" d="M 128.319,379.192 C 111.320,424.965 93.534,327.882 121.833,363.479" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow1)"/>
-<g class="node" data-vertex="0"><circle cx="275.097" cy="89.500" r="18" fill="#cddfea" stroke="#303d46" stroke-width="1.6"/>
-<text x="275.097" y="95.500" text-anchor="middle" font-size="18" font-weight="500" fill="#22292e">0</text></g>
-<g class="node" data-vertex="1"><circle cx="338.412" cy="220.171" r="15" fill="white" stroke="#303d46" stroke-width="1.6"/>
-<text x="338.412" y="226.171" text-anchor="middle" font-size="18" font-weight="500" fill="#22292e">1</text></g>
-<g class="node" data-vertex="2"><circle cx="379.053" cy="320.228" r="15" fill="white" stroke="#303d46" stroke-width="1.6"/>
-<text x="379.053" y="326.228" text-anchor="middle" font-size="18" font-weight="500" fill="#22292e">2</text></g>
-<g class="node" data-vertex="3"><circle cx="284.120" cy="384.500" r="15" fill="white" stroke="#303d46" stroke-width="1.6"/>
-<text x="284.120" y="390.500" text-anchor="middle" font-size="18" font-weight="500" fill="#22292e">3</text></g>
-<g class="node" data-vertex="4"><circle cx="232.955" cy="235.834" r="15" fill="white" stroke="#303d46" stroke-width="1.6"/>
-<text x="232.955" y="241.834" text-anchor="middle" font-size="18" font-weight="500" fill="#22292e">4</text></g>
-<g class="node" data-vertex="5"><circle cx="140.947" cy="369.367" r="15" fill="white" stroke="#303d46" stroke-width="1.6"/>
-<text x="140.947" y="375.367" text-anchor="middle" font-size="18" font-weight="500" fill="#22292e">5</text></g>
+<g font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+<path class="edge" data-source="0" data-target="2" data-occurrence="0" data-change="base" d="M 108.130,226.389 Q 160.225,291.413 236.830,326.643" fill="none" stroke="#35586b" stroke-width="2.3" stroke-linecap="round" marker-end="url(#arrow-base)"/>
+<path class="edge" data-source="0" data-target="1" data-occurrence="0" data-change="base" d="M 115.781,213.023 Q 260.000,234.000 405.208,212.879" fill="none" stroke="#35586b" stroke-width="2.3" stroke-linecap="round" marker-end="url(#arrow-base)"/>
+<path class="edge" data-source="1" data-target="3" data-occurrence="0" data-change="base" d="M 412.571,195.630 Q 354.217,128.164 273.340,92.979" fill="none" stroke="#35586b" stroke-width="2.3" stroke-linecap="round" marker-end="url(#arrow-base)"/>
+<path class="edge" data-source="1" data-target="5" data-occurrence="0" data-change="new" d="M 431.811,192.263 Q 449.000,147.500 432.170,103.671" fill="none" stroke="#b0681d" stroke-width="2.9" stroke-linecap="round" marker-end="url(#arrow-new)"/>
+<path class="edge" data-source="2" data-target="0" data-occurrence="0" data-change="base" d="M 243.120,320.172 Q 189.775,253.587 114.988,219.192" fill="none" stroke="#35586b" stroke-width="2.3" stroke-linecap="round" marker-end="url(#arrow-base)"/>
+<path class="edge" data-source="2" data-target="4" data-occurrence="0" data-change="base" d="M 273.285,340.163 Q 340.000,359.000 405.753,340.435" fill="none" stroke="#35586b" stroke-width="2.3" stroke-linecap="round" marker-end="url(#arrow-base)"/>
+<path class="edge" data-source="3" data-target="0" data-occurrence="0" data-change="new" d="M 237.738,92.939 Q 160.225,128.587 108.755,192.831" fill="none" stroke="#b0681d" stroke-width="2.9" stroke-linecap="round" marker-end="url(#arrow-new)"/>
+<path class="edge" data-source="3" data-target="2" data-occurrence="0" data-change="base" d="M 251.417,103.659 Q 231.000,210.000 251.229,315.359" fill="none" stroke="#35586b" stroke-width="2.3" stroke-linecap="round" marker-end="url(#arrow-base)"/>
+<path class="edge" data-source="4" data-target="1" data-occurrence="0" data-change="base" d="M 431.811,317.263 Q 449.000,272.500 432.170,228.671" fill="none" stroke="#35586b" stroke-width="2.3" stroke-linecap="round" marker-end="url(#arrow-base)"/>
+<path class="edge" data-source="4" data-target="4" data-occurrence="0" data-change="base" d="M 443.790,337.817 C 502.571,300.247 415.838,419.505 433.915,352.903" fill="none" stroke="#35586b" stroke-width="2.3" stroke-linecap="round" marker-end="url(#arrow-base)"/>
+<path class="edge" data-source="5" data-target="3" data-occurrence="0" data-change="new" d="M 406.715,79.837 Q 340.000,61.000 274.247,79.565" fill="none" stroke="#b0681d" stroke-width="2.9" stroke-linecap="round" marker-end="url(#arrow-new)"/>
+<path class="edge" data-source="5" data-target="5" data-occurrence="0" data-change="new" d="M 432.808,67.678 C 412.591,0.911 503.851,116.741 444.650,81.276" fill="none" stroke="#b0681d" stroke-width="2.9" stroke-linecap="round" marker-end="url(#arrow-new)"/>
+<g class="node" data-vertex="0" data-change="base"><circle cx="95" cy="210" r="20" fill="#d8e5ec" stroke="#35586b" stroke-width="1.8"/><text x="95" y="216.5" text-anchor="middle" font-size="20" font-weight="500" fill="#22323d">0</text></g>
+<g class="node" data-vertex="1" data-change="base"><circle cx="425" cy="210" r="18" fill="#fff" stroke="#35586b" stroke-width="1.8"/><text x="425" y="216.5" text-anchor="middle" font-size="20" font-weight="500" fill="#22323d">1</text></g>
+<g class="node" data-vertex="2" data-change="base"><circle cx="255" cy="335" r="18" fill="#fff" stroke="#35586b" stroke-width="1.8"/><text x="255" y="341.5" text-anchor="middle" font-size="20" font-weight="500" fill="#22323d">2</text></g>
+<g class="node" data-vertex="3" data-change="base"><circle cx="255" cy="85" r="18" fill="#fff" stroke="#35586b" stroke-width="1.8"/><text x="255" y="91.5" text-anchor="middle" font-size="20" font-weight="500" fill="#22323d">3</text></g>
+<g class="node" data-vertex="4" data-change="base"><circle cx="425" cy="335" r="18" fill="#fff" stroke="#35586b" stroke-width="1.8"/><text x="425" y="341.5" text-anchor="middle" font-size="20" font-weight="500" fill="#22323d">4</text></g>
+<g class="node" data-vertex="5" data-change="new"><circle cx="425" cy="85" r="18" fill="#fff0d7" stroke="#b0681d" stroke-width="2.2"/><text x="425" y="91.5" text-anchor="middle" font-size="20" font-weight="500" fill="#22323d">5</text></g>
 </g>
 </svg>
