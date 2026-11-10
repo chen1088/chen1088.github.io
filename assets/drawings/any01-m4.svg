@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="430" viewBox="0 0 520 430" role="img" aria-labelledby="title desc">
+<title id="title">Any_01 closure champion: m=4, shortest identity length 10</title>
+<desc id="desc">Reference 0 and 1 transitions. Root 0 is the double circle. Independently swapping 0 and 1 at every vertex generates the full closure.</desc>
+<metadata>{&quot;m&quot;:4,&quot;shortest_identity_length&quot;:10,&quot;root&quot;:0,&quot;canonical_table&quot;:[[1,2],[0,2],[1,3],[0,3]],&quot;source_repository&quot;:&quot;chen1088/AutomataAnalysis&quot;,&quot;source_commit&quot;:&quot;353d325bb118f8507caab8e564adfabc053ccddb&quot;,&quot;source_path&quot;:&quot;figures/family1-atlas/graphs.jsonl&quot;}</metadata>
+<defs>
+<marker id="arrow0" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#245a80"/></marker>
+<marker id="arrow1" markerWidth="9" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#ac6027"/></marker>
+</defs>
+<g transform="translate(16.7136 -24.1477) scale(1.00906)" font-family="system-ui,-apple-system,Segoe UI,sans-serif">
+<path class="edge" data-source="0" data-port="0" data-target="1" d="M 275.594,159.075 Q 346.633,210.392 430.613,231.677" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow0)"/>
+<path class="edge" data-source="0" data-port="1" data-target="2" d="M 261.933,166.870 Q 268.385,236.983 262.324,306.127" fill="none" stroke="#ac6027" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#arrow1)"/>
+<path class="edge" data-source="1" data-port="0" data-target="0" d="M 437.030,227.222 Q 363.559,174.149 282.487,153.600" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow0)"/>
+<path class="edge" data-source="1" data-port="1" data-target="2" d="M 434.508,240.589 Q 346.748,263.236 276.739,314.269" fill="none" stroke="#ac6027" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#arrow1)"/>
+<path class="edge" data-source="2" data-port="0" data-target="1" d="M 276.070,322.053 Q 363.829,299.405 433.838,248.372" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow0)"/>
+<path class="edge" data-source="2" data-port="1" data-target="3" d="M 245.599,320.424 Q 161.915,288.985 87.442,247.198" fill="none" stroke="#ac6027" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#arrow1)"/>
+<path class="edge" data-source="3" data-port="0" data-target="0" d="M 84.953,231.720 Q 168.501,199.920 240.183,159.291" fill="none" stroke="#245a80" stroke-width="2.2" marker-end="url(#arrow0)"/>
+<path class="edge" data-source="3" data-port="1" data-target="3" d="M 54.191,234.945 C 9.203,253.926 67.731,174.452 61.192,219.455" fill="none" stroke="#ac6027" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#arrow1)"/>
+<text class="port-label" data-source="0" data-port="0" x="347.753" y="213.414" text-anchor="middle" font-size="18" font-weight="600" fill="#245a80" stroke="white" stroke-width="6" paint-order="stroke">0</text>
+<text class="port-label" data-source="0" data-port="1" x="260.257" y="242.751" text-anchor="middle" font-size="18" font-weight="600" fill="#ac6027" stroke="white" stroke-width="6" paint-order="stroke">1</text>
+<text class="port-label" data-source="1" data-port="0" x="363.775" y="183.750" text-anchor="middle" font-size="18" font-weight="600" fill="#245a80" stroke="white" stroke-width="6" paint-order="stroke">0</text>
+<text class="port-label" data-source="1" data-port="1" x="349.050" y="271.812" text-anchor="middle" font-size="18" font-weight="600" fill="#ac6027" stroke="white" stroke-width="6" paint-order="stroke">1</text>
+<text class="port-label" data-source="2" data-port="0" x="361.527" y="302.830" text-anchor="middle" font-size="18" font-weight="600" fill="#245a80" stroke="white" stroke-width="6" paint-order="stroke">0</text>
+<text class="port-label" data-source="2" data-port="1" x="166.326" y="287.864" text-anchor="middle" font-size="18" font-weight="600" fill="#ac6027" stroke="white" stroke-width="6" paint-order="stroke">1</text>
+<text class="port-label" data-source="3" data-port="0" x="167.663" y="208.237" text-anchor="middle" font-size="18" font-weight="600" fill="#245a80" stroke="white" stroke-width="6" paint-order="stroke">0</text>
+<text class="port-label" data-source="3" data-port="1" x="43.273" y="223.442" text-anchor="middle" font-size="18" font-weight="600" fill="#ac6027" stroke="white" stroke-width="6" paint-order="stroke">1</text>
+<g class="node" data-state="0"><circle cx="260.192" cy="147.949" r="18" fill="#eaf1f5" stroke="#303d46" stroke-width="1.6"/>
+<circle cx="260.192" cy="147.949" r="14" fill="none" stroke="#303d46" stroke-width="1.2"/>
+<text x="260.192" y="153.949" text-anchor="middle" font-size="18" font-weight="500" fill="#22292e">0</text></g>
+<g class="node" data-state="1"><circle cx="450.000" cy="236.591" r="15" fill="white" stroke="#303d46" stroke-width="1.6"/>
+<text x="450.000" y="242.591" text-anchor="middle" font-size="18" font-weight="500" fill="#22292e">1</text></g>
+<g class="node" data-state="2"><circle cx="260.577" cy="326.051" r="15" fill="white" stroke="#303d46" stroke-width="1.6"/>
+<text x="260.577" y="332.051" text-anchor="middle" font-size="18" font-weight="500" fill="#22292e">2</text></g>
+<g class="node" data-state="3"><circle cx="70.000" cy="237.412" r="15" fill="white" stroke="#303d46" stroke-width="1.6"/>
+<text x="70.000" y="243.412" text-anchor="middle" font-size="18" font-weight="500" fill="#22292e">3</text></g>
+</g>
+</svg>

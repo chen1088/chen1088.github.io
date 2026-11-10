@@ -29,6 +29,7 @@
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
+        <a href="#drawings">Drawings</a>
         <a href="#thesis">Thesis</a>
         <a href="#teaching">Teaching</a>
         <a href="#contact">Contact</a>
@@ -94,6 +95,75 @@
           <p class="paper-links"><a aria-label="Paper: Drawing Algorithms as Modular Objects" href="https://doi.org/10.1145/3830435.3830953">Paper</a><a aria-label="Institutional record: Drawing Algorithms as Modular Objects" href="https://scholarship.haverford.edu/compsci_facpubs/155/">Institutional record</a></p>
           <details><summary>About this work</summary><p>A framework connecting drawing algorithms with procedural visual art and music. AI-free.</p></details>
         </article>
+      </section>
+
+      <section id="drawings" aria-labelledby="drawings-title">
+        <h2 id="drawings-title">Drawings</h2>
+        <h3 class="drawing-title"><span class="math" aria-label="Any zero one">Any<sub>01</sub></span> closure</h3>
+        <p>A champion graph family whose induced DFA families, obtained by independently flipping 0/1 transitions at each state, have the longest shortest identity among rooted graphs with the same number of states.</p>
+        <p>Each choice of flips stays fixed throughout a run. Here an identity <span class="math"><i>u</i> = <i>v</i></span> is a pair of distinct words of equal length that reach the same state from the marked root in every DFA of the closure.</p>
+        <div class="drawing-gallery">
+          <figure>
+            <a class="drawing-image" href="assets/drawings/any01-m2.svg" aria-label="Enlarge champion graph with 2 states">
+              <img src="assets/drawings/any01-m2.svg" width="520" height="430" loading="lazy" alt="Champion rooted graph with 2 states; its Any 01 closure has shortest identity length 3.">
+            </a>
+            <figcaption><span class="math"><i>m</i> = 2</span> · shortest identity length 3</figcaption>
+          </figure>
+          <figure>
+            <a class="drawing-image" href="assets/drawings/any01-m3.svg" aria-label="Enlarge champion graph with 3 states">
+              <img src="assets/drawings/any01-m3.svg" width="520" height="430" loading="lazy" alt="Champion rooted graph with 3 states; its Any 01 closure has shortest identity length 6.">
+            </a>
+            <figcaption><span class="math"><i>m</i> = 3</span> · shortest identity length 6</figcaption>
+          </figure>
+          <figure>
+            <a class="drawing-image" href="assets/drawings/any01-m4.svg" aria-label="Enlarge champion graph with 4 states">
+              <img src="assets/drawings/any01-m4.svg" width="520" height="430" loading="lazy" alt="Champion rooted graph with 4 states; its Any 01 closure has shortest identity length 10.">
+            </a>
+            <figcaption><span class="math"><i>m</i> = 4</span> · shortest identity length 10</figcaption>
+          </figure>
+          <figure>
+            <a class="drawing-image" href="assets/drawings/any01-m5.svg" aria-label="Enlarge champion graph with 5 states">
+              <img src="assets/drawings/any01-m5.svg" width="520" height="430" loading="lazy" alt="Champion rooted graph with 5 states; its Any 01 closure has shortest identity length 15.">
+            </a>
+            <figcaption><span class="math"><i>m</i> = 5</span> · shortest identity length 15</figcaption>
+          </figure>
+          <figure>
+            <a class="drawing-image" href="assets/drawings/any01-m6.svg" aria-label="Enlarge champion graph with 6 states">
+              <img src="assets/drawings/any01-m6.svg" width="520" height="430" loading="lazy" alt="Champion rooted graph with 6 states; its Any 01 closure has shortest identity length 23.">
+            </a>
+            <figcaption><span class="math"><i>m</i> = 6</span> · shortest identity length 23</figcaption>
+          </figure>
+          <figure>
+            <a class="drawing-image" href="assets/drawings/any01-m7.svg" aria-label="Enlarge champion graph with 7 states">
+              <img src="assets/drawings/any01-m7.svg" width="520" height="430" loading="lazy" alt="Champion rooted graph with 7 states; its Any 01 closure has shortest identity length 34.">
+            </a>
+            <figcaption><span class="math"><i>m</i> = 7</span> · shortest identity length 34</figcaption>
+          </figure>
+        </div>
+        <p class="drawing-note">One champion representative at each size. State 0 is the root; blue solid arrows are 0-transitions and orange dashed arrows are 1-transitions in the reference labeling. Select a drawing to enlarge it.</p>
+        <figure class="drawing-plot">
+          <a class="drawing-image" href="assets/drawings/any01-identity-length.svg" aria-label="Enlarge shortest identity length plot">
+            <img src="assets/drawings/any01-identity-length.svg" width="820" height="400" loading="lazy" alt="Certified maximum shortest identity length versus number of states m: 1, 3, 6, 10, 15, 23, 34 for m from 1 through 7.">
+          </a>
+          <figcaption>Number of states <span class="math"><i>m</i></span> versus the longest shortest identity length. Certified maxima for <span class="math">1 ≤ <i>m</i> ≤ 7</span>.</figcaption>
+        </figure>
+        <details class="drawing-data">
+          <summary>Plot values and graph data</summary>
+          <table>
+            <caption>Certified maximum shortest identity lengths</caption>
+            <thead><tr><th scope="col">States, <i>m</i></th><th scope="col">Shortest identity length</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">1</th><td>1</td></tr>
+              <tr><th scope="row">2</th><td>3</td></tr>
+              <tr><th scope="row">3</th><td>6</td></tr>
+              <tr><th scope="row">4</th><td>10</td></tr>
+              <tr><th scope="row">5</th><td>15</td></tr>
+              <tr><th scope="row">6</th><td>23</td></tr>
+              <tr><th scope="row">7</th><td>34</td></tr>
+            </tbody>
+          </table>
+          <p><a href="assets/drawings/any01-champions.json" download>Graph data (JSON)</a> · <a href="https://github.com/chen1088/AutomataAnalysis/tree/353d325bb118f8507caab8e564adfabc053ccddb/results/family1-m7">Source and certificates</a></p>
+        </details>
       </section>
 
       <section id="thesis" aria-labelledby="thesis-title">

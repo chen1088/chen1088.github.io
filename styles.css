@@ -77,3 +77,23 @@ footer { border-top: 1px solid var(--rule); padding-top: 19px; margin-top: 50px;
   a { color: inherit; }
   .paper { break-inside: avoid; }
 }
+
+/* Research drawings */
+.drawing-title { margin: 0 0 14px; font-size: 18px; line-height: 1.4; font-weight: 600; }
+.drawing-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 18px; margin-top: 25px; }
+.drawing-gallery figure { margin: 0; min-width: 0; }
+.drawing-image { display: block; line-height: 0; border: 1px solid var(--rule); background: #fff; }
+.drawing-image img { display: block; width: 100%; height: auto; }
+#drawings figcaption { margin-top: 7px; color: var(--muted); font-size: 13px; line-height: 1.55; }
+.drawing-note { margin: 18px 0 0; color: var(--muted); font-size: 13px; }
+.drawing-plot { margin: 29px 0 17px; }
+.drawing-data table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14px; text-align: left; }
+.drawing-data caption { text-align: left; margin-bottom: 7px; font-weight: 600; }
+.drawing-data th, .drawing-data td { border-bottom: 1px solid var(--rule); padding: 5px 12px 5px 0; }
+.drawing-data p { font-size: 13px; }
+@media (max-width: 540px) {
+  .drawing-gallery { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+}
+@media print {
+  .drawing-gallery figure, .drawing-plot { break-inside: avoid; }
+}
