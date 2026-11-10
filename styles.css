@@ -9,9 +9,10 @@
 * { box-sizing: border-box; }
 html { scroll-padding-top: 2rem; }
 body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
-a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: .18em; }
-a:hover { color: #143b57; }
-a:focus-visible, summary:focus-visible { outline: 3px solid #c08034; outline-offset: 5px; border-radius: 1px; }
+a, .email-reveal { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: .18em; }
+.email-reveal { background: none; border: 0; padding: 0; font: inherit; text-decoration-line: underline; cursor: pointer; }
+a:hover, .email-reveal:hover { color: #143b57; }
+a:focus-visible, .email-reveal:focus-visible, summary:focus-visible { outline: 3px solid #c08034; outline-offset: 5px; border-radius: 1px; }
 .page { width: min(1040px, calc(100% - 96px)); margin: 76px auto 28px; display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 72px; }
 .profile { align-self: start; position: sticky; top: 48px; }
 .portrait { display: block; width: 176px; height: 176px; max-width: 100%; object-fit: contain; margin: 0 0 22px; }
