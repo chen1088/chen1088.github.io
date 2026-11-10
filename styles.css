@@ -1,0 +1,78 @@
+:root {
+  color-scheme: light;
+  --paper: #faf9f6;
+  --ink: #22292e;
+  --muted: #626b72;
+  --link: #245a80;
+  --rule: #dcdedc;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 2rem; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: .18em; }
+a:hover { color: #143b57; }
+a:focus-visible, summary:focus-visible { outline: 3px solid #c08034; outline-offset: 5px; border-radius: 1px; }
+.page { width: min(1040px, calc(100% - 96px)); margin: 76px auto 28px; display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 72px; }
+.profile { align-self: start; position: sticky; top: 48px; }
+.portrait { display: block; width: 176px; height: 176px; max-width: 100%; object-fit: contain; margin: 0 0 22px; }
+h1 { font-size: 32px; line-height: 1.2; margin: 0 0 10px; font-weight: 650; letter-spacing: -.035em; }
+.position { margin: 0 0 12px; color: var(--muted); }
+.affiliation, .advisor { font-size: 15px; margin: 0 0 18px; }
+.profile-links { font-size: 15px; line-height: 1.9; margin: 23px 0 0; }
+nav { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin-top: 35px; padding-top: 23px; border-top: 1px solid var(--rule); }
+nav a { font-size: 14px; color: var(--muted); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+main { min-width: 0; }
+section { margin-bottom: 44px; }
+h2 { margin: 0 0 17px; font-size: 21px; line-height: 1.4; font-weight: 650; letter-spacing: -.02em; }
+p { margin: 0 0 15px; }
+strong { font-weight: 600; }
+.approaches { margin: 23px 0 0; font-size: 15px; }
+.approaches div { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 12px; margin: 9px 0; }
+dt { font-weight: 600; }
+dd { margin: 0; color: var(--muted); }
+.section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; border-bottom: 1px solid var(--rule); margin-bottom: 26px; }
+.section-heading h2 { margin-bottom: 12px; }
+.year { color: var(--muted); font-size: 14px; }
+.paper { margin-bottom: 31px; }
+.paper h3 { font-size: 16px; line-height: 1.55; font-weight: 600; margin: 0 0 5px; }
+.paper h3 a { text-decoration: none; }
+.paper h3 a:hover { text-decoration: underline; }
+.authors, .venue { font-size: 14px; margin: 0 0 3px; }
+.venue { color: var(--muted); }
+.paper-links { display: flex; flex-wrap: wrap; column-gap: 16px; row-gap: 4px; font-size: 13px; margin: 6px 0 0; }
+.math { font-family: Georgia, "Times New Roman", serif; white-space: nowrap; }
+sup { font-size: .75em; }
+details { margin-top: 8px; font-size: 13px; }
+summary { cursor: pointer; color: var(--muted); width: fit-content; }
+details p { color: var(--muted); margin: 7px 0 0; font-size: 14px; }
+footer { border-top: 1px solid var(--rule); padding-top: 19px; margin-top: 50px; font-size: 12px; color: var(--muted); }
+.skip-link { position: absolute; left: 12px; top: 8px; padding: 7px 14px; background: #fff; z-index: 2; transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
+@media (max-width: 800px) {
+  .page { width: min(650px, calc(100% - 48px)); margin-top: 38px; grid-template-columns: minmax(0, 1fr); gap: 39px; }
+  .profile { position: static; }
+  .portrait { float: right; width: 128px; height: 128px; margin: 0 0 18px 22px; }
+  h1 { font-size: 31px; }
+  .position { margin-bottom: 7px; }
+  .affiliation { margin-bottom: 12px; }
+  .advisor { margin-bottom: 8px; }
+  .profile-links { margin-top: 14px; }
+  nav { clear: both; flex-direction: row; flex-wrap: wrap; gap: 10px 23px; margin-top: 24px; padding-top: 18px; }
+  nav a { min-height: 30px; display: inline-flex; align-items: center; }
+  section { margin-bottom: 35px; }
+}
+@media (max-width: 420px) {
+  .page { width: calc(100% - 36px); }
+  .section-heading h2 { font-size: 20px; }
+  .approaches div { grid-template-columns: 96px minmax(0, 1fr); gap: 10px; }
+  .paper h3 { font-size: 16px; }
+}
+@media print {
+  body { background: white; font-size: 11pt; }
+  .page { display: block; width: auto; margin: 0; }
+  .profile { position: static; margin-bottom: 30px; }
+  nav, details, .skip-link { display: none; }
+  a { color: inherit; }
+  .paper { break-inside: avoid; }
+}
