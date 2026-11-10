@@ -102,3 +102,11 @@ footer { border-top: 1px solid var(--rule); padding-top: 19px; margin-top: 50px;
 @media print {
   .drawing-gallery figure { break-inside: avoid; }
 }
+
+/* The big blue button */
+.big-blue-button-wrap { display: flex; justify-content: center; margin: 32px 0 18px; }
+.big-blue-button { display: flex; align-items: center; justify-content: center; width: min(100%, 520px); min-height: 120px; padding: 24px 28px; border: 2px solid #0c50bc; border-radius: 14px; background: #1468e8; box-shadow: 0 7px 0 #0a3d91; color: #fff; font-size: clamp(22px, 4vw, 30px); font-weight: 700; line-height: 1.2; text-align: center; text-decoration: none; }
+.big-blue-button:hover, .big-blue-button:visited { color: #fff; }
+.big-blue-button:hover { background: #0d58ca; }
+.big-blue-button:active { transform: translateY(4px); box-shadow: 0 3px 0 #0a3d91; }
+.big-blue-button:focus-visible { outline: 3px solid #c08034; outline-offset: 5px; border-radius: 14px; }
