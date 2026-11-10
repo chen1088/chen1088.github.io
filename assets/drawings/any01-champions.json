@@ -792,7 +792,7 @@
     "total_existing_edge_redirects": 9,
     "vertex_labels": "Birth order: each step adds the next integer label; root 0 stays fixed.",
     "coordinates": "All drawings share one canvas and fixed coordinates for retained vertices.",
-    "highlights": "Amber marks the newly added vertex and all edges absent from the preceding graph; no removed edge is drawn.",
+    "highlights": "Amber marks only the newly added vertex; all edges use the same color and line weight. No removed edge is drawn.",
     "canvas": {
       "width": 520,
       "height": 430,
@@ -837,8 +837,10 @@
       ],
       "colors": {
         "unchanged": "#35586b",
-        "new": "#b0681d"
-      }
+        "new_vertex": "#b0681d",
+        "edge": "#35586b"
+      },
+      "edge_stroke_width": 2.3
     }
   }
 }
