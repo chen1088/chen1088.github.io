@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="520" height="430" viewBox="0 0 520 430" role="img" aria-labelledby="title desc">
 <title id="title">Champion directed graph with 5 vertices, ∀₀₁ closure identity length 15</title>
-<desc id="desc">Vertices retain the same labels and positions in every drawing. The shaded vertex 0 is the root. Amber marks only the vertex added since the preceding drawing. All edges use the same style. All edges shown belong to this directed graph.</desc>
+<desc id="desc">Vertices retain the same labels and positions in every drawing. The shaded vertex 0 is the root. All edges use the same style. All edges shown belong to this directed graph.</desc>
 <metadata>{&quot;name&quot;:&quot;\u2200\u2080\u2081 closure champion directed graph&quot;,&quot;m&quot;:5,&quot;shortest_identity_length&quot;:15,&quot;root&quot;:0,&quot;display_adjacency&quot;:[[2,1],[2,3],[0,4],[2,3],[1,4]],&quot;canonical_to_display&quot;:[0,2,1,4,3],&quot;canonical_table&quot;:[[1,2],[0,3],[1,4],[2,3],[1,4]],&quot;source_repository&quot;:&quot;chen1088/AutomataAnalysis&quot;,&quot;source_commit&quot;:&quot;353d325bb118f8507caab8e564adfabc053ccddb&quot;,&quot;source_path&quot;:&quot;figures/family1-atlas/graphs.jsonl&quot;,&quot;positions&quot;:[[95,210],[425,210],[255,335],[255,85],[425,335]],&quot;retargeted_old_edges&quot;:2,&quot;removed_edges&quot;:[[2,1],[3,0]],&quot;added_edges&quot;:[[2,4],[3,2],[4,1],[4,4]]}</metadata>
 <defs>
 <marker id="arrow-base" markerWidth="10" markerHeight="9" refX="9" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#35586b"/></marker>
@@ -20,6 +20,6 @@
 <g class="node" data-vertex="1" data-change="base"><circle cx="425" cy="210" r="18" fill="#fff" stroke="#35586b" stroke-width="1.8"/><text x="425" y="216.5" text-anchor="middle" font-size="20" font-weight="500" fill="#22323d">1</text></g>
 <g class="node" data-vertex="2" data-change="base"><circle cx="255" cy="335" r="18" fill="#fff" stroke="#35586b" stroke-width="1.8"/><text x="255" y="341.5" text-anchor="middle" font-size="20" font-weight="500" fill="#22323d">2</text></g>
 <g class="node" data-vertex="3" data-change="base"><circle cx="255" cy="85" r="18" fill="#fff" stroke="#35586b" stroke-width="1.8"/><text x="255" y="91.5" text-anchor="middle" font-size="20" font-weight="500" fill="#22323d">3</text></g>
-<g class="node" data-vertex="4" data-change="new"><circle cx="425" cy="335" r="18" fill="#fff0d7" stroke="#b0681d" stroke-width="2.2"/><text x="425" y="341.5" text-anchor="middle" font-size="20" font-weight="500" fill="#22323d">4</text></g>
+<g class="node" data-vertex="4" data-change="new"><circle cx="425" cy="335" r="18" fill="#fff" stroke="#35586b" stroke-width="1.8"/><text x="425" y="341.5" text-anchor="middle" font-size="20" font-weight="500" fill="#22323d">4</text></g>
 </g>
 </svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="520" height="430" viewBox="0 0 520 430" role="img" aria-labelledby="title desc">
 <title id="title">Champion directed graph with 2 vertices, ∀₀₁ closure identity length 3</title>
-<desc id="desc">Vertices retain the same labels and positions in every drawing. The shaded vertex 0 is the root. Amber marks only the vertex added since the preceding drawing. All edges use the same style. All edges shown belong to this directed graph.</desc>
+<desc id="desc">Vertices retain the same labels and positions in every drawing. The shaded vertex 0 is the root. All edges use the same style. All edges shown belong to this directed graph.</desc>
 <metadata>{&quot;name&quot;:&quot;\u2200\u2080\u2081 closure champion directed graph&quot;,&quot;m&quot;:2,&quot;shortest_identity_length&quot;:3,&quot;root&quot;:0,&quot;display_adjacency&quot;:[[0,1],[0,1]],&quot;canonical_to_display&quot;:[0,1],&quot;canonical_table&quot;:[[0,1],[0,1]],&quot;source_repository&quot;:&quot;chen1088/AutomataAnalysis&quot;,&quot;source_commit&quot;:&quot;353d325bb118f8507caab8e564adfabc053ccddb&quot;,&quot;source_path&quot;:&quot;figures/family1-atlas/graphs.jsonl&quot;,&quot;positions&quot;:[[95,210],[425,210]],&quot;retargeted_old_edges&quot;:null,&quot;removed_edges&quot;:[],&quot;added_edges&quot;:[[0,0],[0,1],[1,0],[1,1]]}</metadata>
 <defs>
 <marker id="arrow-base" markerWidth="10" markerHeight="9" refX="9" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#35586b"/></marker>

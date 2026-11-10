@@ -792,7 +792,7 @@
     "total_existing_edge_redirects": 9,
     "vertex_labels": "Birth order: each step adds the next integer label; root 0 stays fixed.",
     "coordinates": "All drawings share one canvas and fixed coordinates for retained vertices.",
-    "highlights": "Amber marks only the newly added vertex; all edges use the same color and line weight. No removed edge is drawn.",
+    "highlights": "Root 0 is shaded to mark the root; added vertices and edges use the same styles as retained elements.",
     "canvas": {
       "width": 520,
       "height": 430,
@@ -837,8 +837,9 @@
       ],
       "colors": {
         "unchanged": "#35586b",
-        "new_vertex": "#b0681d",
-        "edge": "#35586b"
+        "edge": "#35586b",
+        "vertex_fill": "#fff",
+        "root_fill": "#d8e5ec"
       },
       "edge_stroke_width": 2.3
     }
