@@ -1,0 +1,34 @@
+Consider a finite matrix A whose entries belong to {0, 1, ?}. The symbol ? denotes a blank. A completion assigns a bit to every blank and leaves every given bit unchanged. The row and column orders are part of the problem.
+
+A diagonal rectangle is a choice of rows i < j and columns p < q for which the four entries are
+
+1 0
+0 1
+
+in that order. The rows and columns need not be consecutive. Call a completion valid when no such choice exists.
+
+For orientation, this partial matrix has a valid completion:
+
+1 ?          1 1
+? 1    ->    0 1
+
+This partial matrix has no valid completion:
+
+1 ? 0
+? 0 1
+0 1 0
+
+Local restrictions can already rule out a bit at a blank. For example,
+
+1 0
+? 1
+
+requires the blank to be 1, since 0 would create the forbidden pattern.
+
+For each blank x, let L(x) be the set of bits that can be assigned to x without creating a diagonal rectangle while every other blank is left unfilled. Thus a bit is excluded from L(x) precisely when, together with three other corners that were already fixed, it would complete a forbidden rectangle.
+
+Say that the original partial matrix is viable if it contains no diagonal rectangle made entirely of given entries and L(x) = {0, 1} for every blank x. These are tests on the initial partial matrix, not on a partially completed sequence of choices.
+
+Prove or disprove the following conjecture: every viable finite partial matrix has a valid completion.
+
+If the conjecture is true, give a rigorous finite proof covering all finite dimensions. If it is false, give an explicit finite partial matrix, verify both conditions for viability, and rigorously establish that none of its completions is valid. Unsupported assertions about a search or a solver are not sufficient.

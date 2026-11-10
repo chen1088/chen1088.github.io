@@ -1,0 +1,39 @@
+Consider the following problem about completing a partially specified binary array.
+
+The array has finitely many rows and columns, each with a fixed order. Its entries lie in {0, 1, ?}. You may replace each ? by a bit, but you may not modify any entry that was already 0 or 1. A completed array is acceptable exactly when, for every pair of rows r < s and columns c < d, its selected entries are not
+
+1 0
+0 1
+
+in that order. The pairs of rows or columns may be separated by other rows or columns; this restriction is not confined to adjacent positions.
+
+For orientation, this input can be completed:
+
+1 ?
+? 1
+
+One acceptable result is
+
+1 1
+0 1
+
+This other input cannot be completed acceptably:
+
+1 ? 0
+? 0 1
+0 1 0
+
+These are examples of the general completion problem, before imposing the hypothesis below.
+
+A bit is ruled out at a blank if putting it there would form the displayed forbidden rectangle with three other entries already fixed in the input. Thus, in
+
+1 0
+? 1
+
+the missing entry must be 1 to avoid an immediate forbidden rectangle.
+
+Now restrict attention to viable inputs. This means that no forbidden rectangle is already completely specified and that neither bit is ruled out at any blank. More explicitly, for each individual blank, putting 0 there is initially allowed and putting 1 there is initially allowed, with every other blank still unfilled. Only three other originally fixed corners may be used in this local test.
+
+Does every viable input admit an acceptable complete filling? Prove the assertion or refute it. A proof must cover arbitrary finite numbers of rows and columns. A refutation must give a concrete finite input, check that it satisfies the stated viability conditions, and supply a rigorous justification that all complete fillings fail. In either case, establish the conclusion with a finite mathematical argument.
+
+An unsupported report from a search or solver does not settle the question.

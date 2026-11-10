@@ -1,0 +1,32 @@
+Can local freedom at every blank guarantee a complete filling with no diagonal rectangle?
+
+The objects under consideration are finite rectangular matrices X with entries in {0, 1, ?}. Replace all ? entries by bits, keeping every existing 0 and 1 unchanged. In a successful filling, no two rows i < j and two columns k < l have the ordered submatrix
+
+1 0
+0 1
+
+at their four intersections. The selected rows and columns can be nonconsecutive. In particular, avoiding this pattern only in neighboring rows and columns would not meet the requirement.
+
+Here is a partial matrix that can be filled successfully, followed by one such filling:
+
+1 ?          1 1
+? 1    ->    0 1
+
+In contrast, this partial matrix has no successful filling:
+
+1 ? 0
+? 0 1
+0 1 0
+
+An immediate restriction is visible in the example
+
+1 0
+? 1
+
+where the blank must be 1, because choosing 0 creates a diagonal rectangle.
+
+For the conjecture, restrict attention to viable inputs. Viability means that no diagonal rectangle is already present using only fixed entries, and that every blank initially admits either bit when considered separately. To make the second condition precise, fill just one selected blank with 0 and leave all other blanks unknown; this must create no forbidden rectangle. The same must hold for filling that one blank with 1 instead. A rectangle relevant to either test has its other three corners already fixed in the input.
+
+The assertion to resolve is: every viable input has a successful complete filling.
+
+Give a proof or a counterexample. A proof must be a rigorous finite argument for all finite dimensions. A counterexample must be an explicit finite partial matrix accompanied by a verification of viability and a rigorous justification that no successful completion exists. An unsubstantiated report of a solver or search result is not enough.

@@ -1,0 +1,41 @@
+I would like a proof or a counterexample for the following matrix filling claim.
+
+We begin with a finite rectangular array of 0s, 1s, and blanks marked ?. A filling assigns a bit to each blank and preserves all existing bits. It is valid if it avoids a diagonal rectangle: there must be no rows a < b and columns u < v for which the four resulting entries, in their original order, are
+
+1 0
+0 1
+
+This rule applies to all pairs of rows and columns, including nonconsecutive pairs. The order of the rows and columns is fixed.
+
+For example,
+
+1 ?
+? 1
+
+has the valid filling
+
+1 1
+0 1
+
+while the unrestricted instance
+
+1 ? 0
+? 0 1
+0 1 0
+
+has no valid filling.
+
+An initially forced blank is one at which a value is excluded because it would complete a forbidden rectangle with three other corners already fixed. In the small array
+
+1 0
+? 1
+
+the blank is consequently forced to be 1.
+
+For this claim, call an input viable precisely when it satisfies two initial requirements. First, no forbidden rectangle is already formed by four fixed entries. Second, each blank can individually be assigned either 0 or 1 without creating a forbidden rectangle with three other originally fixed entries. Each of these two one-blank tests leaves all other blanks unfilled. Viability therefore requires both bits to remain locally available at every blank from the outset.
+
+Claim: every viable input has a valid filling of all its blanks.
+
+Is this claim true for arbitrary finite dimensions? Prove or disprove it with a finite, rigorous argument. If you give a counterexample, write down the entire partial matrix, verify that it meets both viability requirements, and establish that no assignment of all its blanks can avoid every forbidden diagonal rectangle. If you prove the claim, the proof must apply to every finite viable input.
+
+An unsupported report from a search or solver does not settle the question.

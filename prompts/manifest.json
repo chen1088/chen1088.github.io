@@ -1,0 +1,78 @@
+{
+  "version": "mfg-poster-1-3-v1",
+  "source": "https://github.com/chen1088/matrix-filling-game/blob/10c998c97eee9ff52cf3fbb3d0e45b9ed23eee8f/poster_np_completeness.tex",
+  "source_sections": [
+    "1. Problem Statement",
+    "2. A small YES and a small NO",
+    "3. The MFG conjecture"
+  ],
+  "task": "Prove or disprove that every viable partial Boolean matrix has a diagonal-rectangle-free completion.",
+  "variation_policy": "Wording and notation vary; mathematical definitions, ordered pattern, examples, and required justification are held fixed. No later-section answers are included.",
+  "selection": "Per-browser shuffled cycles of ten, with no immediate repeat across cycle boundaries. Different visitors can receive the same variant.",
+  "legacy_alias": {
+    "path": "the-big-blue-button.txt",
+    "variant": "mfg-01"
+  },
+  "variants": [
+    {
+      "id": "mfg-01",
+      "file": "mfg-01.txt",
+      "sha256": "680f4fb15df365e22e9a4892563ddd4fe903f0a1e1ea56963886c48658c7db93",
+      "words": 319
+    },
+    {
+      "id": "mfg-02",
+      "file": "mfg-02.txt",
+      "sha256": "e965d119cf3cf4c2f3e4d951714bedd2d7df17d5f6034da6d5952542e95cb219",
+      "words": 339
+    },
+    {
+      "id": "mfg-03",
+      "file": "mfg-03.txt",
+      "sha256": "6a8532c672b309e610410158c163bed3927a14df794a26c82625af23cf7ab602",
+      "words": 319
+    },
+    {
+      "id": "mfg-04",
+      "file": "mfg-04.txt",
+      "sha256": "0831e712acd43a7a21abf112062c4d697e0ea71e7daff2049a5547f70af74732",
+      "words": 330
+    },
+    {
+      "id": "mfg-05",
+      "file": "mfg-05.txt",
+      "sha256": "2ed57925d215b72a7e9ead098d2935ccbc7405509aa639b3a663023169b6ad9c",
+      "words": 334
+    },
+    {
+      "id": "mfg-06",
+      "file": "mfg-06.txt",
+      "sha256": "ffdbaea70ae122a25921c02388ad59433d2c7186866af1eaa46f7bb7a71b9325",
+      "words": 314
+    },
+    {
+      "id": "mfg-07",
+      "file": "mfg-07.txt",
+      "sha256": "c0231a7482041aaaf2cdc395164ba97bfccf59cf6a5232112c7329d542097f4c",
+      "words": 311
+    },
+    {
+      "id": "mfg-08",
+      "file": "mfg-08.txt",
+      "sha256": "b6686aef4ee1f6ef2bb3907fe2908659207311198e05e94e5c0ee1172bd02bf7",
+      "words": 316
+    },
+    {
+      "id": "mfg-09",
+      "file": "mfg-09.txt",
+      "sha256": "3c76c3879dc8f61060ea71d579797956c854b98cb4ed84740870b1bfa325c920",
+      "words": 306
+    },
+    {
+      "id": "mfg-10",
+      "file": "mfg-10.txt",
+      "sha256": "93dc6d49172c8efe6872abd6e01a9507264f9bf75574227226b960fc8e6040f4",
+      "words": 313
+    }
+  ]
+}

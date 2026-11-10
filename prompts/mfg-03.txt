@@ -1,0 +1,41 @@
+Study a conjecture for finite partial Boolean matrices.
+
+Write M for a matrix with entries in {0, 1, ?}. Completion means choosing a Boolean value for each ? without changing the specified entries. The order of the rows and the order of the columns are part of the problem.
+
+A diagonal rectangle is the configuration
+
+1 0
+0 1
+
+at the intersections of some rows i < j and columns k < l. Neither pair is required to be consecutive. A diagonal-rectangle-free filling avoids this configuration for every such choice.
+
+Some small instances illustrate the definition. The matrix
+
+1 ?
+? 1
+
+admits, for example, the filling
+
+1 1
+0 1
+
+By contrast,
+
+1 ? 0
+? 0 1
+0 1 0
+
+does not admit any diagonal-rectangle-free filling. These examples concern the general problem; viability is the additional condition defined next.
+
+For a blank position x, let L(x) be its initially locally admissible bits. A bit b belongs to L(x) when assigning b to x alone creates no diagonal rectangle using x and three other originally specified entries. All other blanks stay unassigned during this test. A blank is locally forced if one of its bits is ruled out by such three fixed corners. For instance,
+
+1 0
+? 1
+
+locally forces the blank to 1.
+
+Say M is viable if it has no diagonal rectangle made entirely of specified entries and L(x) = {0, 1} at every blank x. This is an initial condition on the given matrix, rather than a condition obtained after making further assignments.
+
+Determine whether every viable M has a diagonal-rectangle-free completion. Give a rigorous finite proof if the conjecture holds for all finite matrix dimensions. Otherwise, exhibit a finite partial matrix that is viable but has no permitted completion, and justify both properties in sufficient detail to verify the refutation.
+
+An unsupported report from a search or solver does not settle the question.

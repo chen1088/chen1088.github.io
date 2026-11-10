@@ -1,0 +1,37 @@
+Investigate the following conjecture about completing partial binary matrices.
+
+The input is a finite matrix P with entries 0, 1, or ?. Given bits are fixed; a filling chooses 0 or 1 for each ?. Rows and columns retain their given orders. A filling is diagonal-rectangle-free when it contains no four corners of the form
+
+1 0
+0 1
+
+chosen from rows a < b and columns c < d. Any pair of rows and any pair of columns may be chosen, whether or not they are consecutive.
+
+Two elementary examples illustrate what a filling must accomplish. A possible filling of
+
+1 ?
+? 1
+
+is
+
+1 1
+0 1
+
+On the other hand, no diagonal-rectangle-free filling exists for
+
+1 ? 0
+? 0 1
+0 1 0
+
+A blank may be restricted before any choices have been made. For instance, in
+
+1 0
+? 1
+
+placing 0 at the blank immediately makes a forbidden rectangle, so its required value is 1.
+
+Call a partial matrix viable when it satisfies both of these initial conditions: it has no forbidden rectangle consisting entirely of fixed bits, and every blank individually allows both possible values. Here a value is individually allowed if placing that bit only at that blank creates no forbidden rectangle while all other blanks remain unknown. Only three other already fixed corners can rule out a value in this local test; global extendability is not being assumed.
+
+Conjecture: every viable partial matrix can be filled completely while remaining diagonal-rectangle-free.
+
+Please prove or disprove the conjecture. For a proof, give a rigorous finite argument valid for every finite size. For a refutation, exhibit a finite partial matrix, check its viability, and rigorously show that every filling fails. The conclusion must be justified rather than supported only by a statement that a computational search or solver succeeded.
