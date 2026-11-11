@@ -17,7 +17,7 @@ function storage(blocked = false) {
 function page(saved) {
   const listeners = new Map();
   const link = {
-    href: 'https://chen1088.github.io/prompts/mfg-01.txt?v=mfg-poster-1-3-v1',
+    href: 'https://chen1088.github.io/prompts/mfg-01.txt?v=mfg-conversational-v2',
     addEventListener(type, fn) { listeners.set(type, fn); }
   };
   vm.runInNewContext(source, {
@@ -30,7 +30,7 @@ function page(saved) {
       listeners.get(type)({ type, button });
       const url = new URL(link.href);
       assert.match(url.pathname, /^\/prompts\/mfg-(0[1-9]|10)\.txt$/);
-      assert.ok(url.searchParams.get('v').startsWith('mfg-poster-1-3-v1-'));
+      assert.ok(url.searchParams.get('v').startsWith('mfg-conversational-v2-'));
       return url.pathname;
     }
   };
@@ -62,7 +62,7 @@ for (let i = 0; i < 100; i++) {
 }
 
 const damaged = storage();
-damaged.values.set('chenxu:mfg-prompts:mfg-poster-1-3-v1', '{not JSON');
+damaged.values.set('chenxu:mfg-prompts:mfg-conversational-v2', '{not JSON');
 assert.ok(page(damaged).activate());
 
 const writable = storage();
@@ -71,7 +71,7 @@ const readOnly = { getItem: key => writable.getItem(key), setItem() { throw new 
 const fallback = page(readOnly);
 const fallbackCycle = Array.from({ length: 10 }, () => fallback.activate());
 assert.equal(new Set(fallbackCycle).size, 10, 'Readable but unwritable storage must use page memory');
-damaged.values.set('chenxu:mfg-prompts:mfg-poster-1-3-v1', JSON.stringify({ version: 'mfg-poster-1-3-v1', remaining: [100, 100], last: -1 }));
+damaged.values.set('chenxu:mfg-prompts:mfg-conversational-v2', JSON.stringify({ version: 'mfg-conversational-v2', remaining: [100, 100], last: -1 }));
 assert.ok(page(damaged).activate());
 
 const multi = page(storage());

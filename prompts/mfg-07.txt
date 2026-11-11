@@ -1,32 +1,12 @@
-Here is a matrix completion question. Start with any finite rectangular array containing 0s, 1s, and blanks written as ?. You may replace each ? by 0 or 1, but may not alter a prescribed entry.
+Here is a matrix filling question. We have a matrix in {0,1,b}^{m x n}, with b standing for a blank, and we want to replace each b by 0 or 1 without changing the filled entries. The goal is to avoid the pattern
 
-The arrangement to avoid is
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
 
-1 0
-0 1
+on any two rows and any two columns. The rows and columns stay in their original order when we pick them, so the antidiagonal pattern is different and is not what we are trying to avoid.
 
-at the intersections of two rows and two columns. More explicitly, for row indices r < s and column indices c < d, the four values must not be 1, 0, 0, 1 in the positions (r,c), (r,d), (s,c), (s,d), respectively. This restriction applies even when the selected rows or columns are separated by other rows or columns. Their given order must be respected.
+The first thing I noticed is that a blank can already have its value decided by three filled corners. One choice would complete a diagonal rectangle, so we must use the other choice. This can make a partial matrix impossible to fill. What I would like to understand is whether these immediate restrictions are the whole problem. By a forced blank I mean one forced by three corners that are filled in the given matrix. If a rectangle has zero, one, or two filled corners, I am not calling any of its blanks forced just because they belong to that rectangle.
 
-For example, a successful filling is
-
-1 ?          1 1
-? 1    ->    0 1
-
-whereas the following array cannot be filled successfully:
-
-1 ? 0
-? 0 1
-0 1 0
-
-There can be an immediate constraint on an individual blank. In
-
-1 0
-? 1
-
-the blank has to be 1: choosing 0 completes the prohibited arrangement.
-
-Now impose two starting conditions. First, no prohibited rectangle is already specified entirely by given bits. Second, inspect any blank by itself: assigning it 0 is initially legal, and assigning it 1 is initially legal. In each inspection all the other blanks remain unfilled. A choice is initially illegal exactly when it creates a prohibited rectangle with three other already prescribed corners. Call an array satisfying these two conditions viable.
-
-Is every viable array guaranteed to admit a successful complete filling? Prove or disprove this statement for arbitrary finite numbers of rows and columns.
-
-A positive answer requires a rigorous finite proof for all sizes. A negative answer requires an explicit finite partial array, a verification of its starting conditions, and a rigorous demonstration that every complete filling contains a prohibited rectangle. A claimed computational outcome without justification does not settle the question.
+Now take a partial matrix with at least one blank and no forced blanks. Is there always a way to fill it completely while avoiding diagonal rectangles? Please formulate the conjecture carefully and see whether it can be proved or disproved.

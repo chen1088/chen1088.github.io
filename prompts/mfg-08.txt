@@ -1,40 +1,12 @@
-Let M be an h by w matrix over {0, 1, ?}, with finite positive integers h and w. The row indices run from 1 to h and the column indices from 1 to w. A completion B is a Boolean matrix of the same dimensions agreeing with every nonblank entry of M.
+I have been thinking about filling the blanks of a Boolean matrix. More precisely, the starting matrix is in {0,1,b}^{m x n}, where b is a blank entry that still needs a 0 or a 1. We leave the entries already filled alone. The finished matrix should not contain a diagonal rectangle
 
-The completion is acceptable if there are no indices i < j and p < q such that
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
 
-B[i,p] = 1, B[i,q] = 0,
-B[j,p] = 0, B[j,q] = 1.
+as a submatrix. We can choose any two rows and any two columns to get this rectangle, keeping their order. An antidiagonal arrangement is not the same forbidden pattern.
 
-Equivalently, the ordered pattern
+It is easy to see how a blank can be forced: if the other three corners are already filled, one value might immediately make a diagonal rectangle, so that value cannot be used. Some matrices fail to have a completion because of restrictions like this. But what happens if there are no such forced blanks at the start? I only mean this direct three-corner restriction. A blank in a rectangle with two filled corners, one filled corner, or no filled corners does not count as forced on that account.
 
-1 0
-0 1
-
-must be absent on every pair of rows and columns, not merely on adjacent ones.
-
-Examples of the basic completion condition are as follows. The first partial matrix admits the indicated acceptable completion:
-
-1 ?          1 1
-? 1    ->    0 1
-
-The next partial matrix admits no acceptable completion:
-
-1 ? 0
-? 0 1
-0 1 0
-
-Also, the blank in
-
-1 0
-? 1
-
-is forced to 1 by the three fixed entries.
-
-Define viability using only M as originally given:
-
-(a) No selection i < j, p < q has all four corners already fixed to the prohibited pattern.
-(b) For every blank position x, each bit b in {0, 1} can be placed at x alone without producing a fully specified prohibited rectangle. All other blank positions are still blank during this test. In particular, the three other corners of a rectangle that could forbid b must already be fixed in M.
-
-The conjecture is that every viable M has an acceptable completion. Decide this conjecture by a proof or a counterexample.
-
-If you prove it, your argument must be finite and apply to all finite dimensions. If you refute it, specify a finite matrix and rigorously verify both its viability and the absence of any acceptable completion. Merely reporting that a program or solver found an answer is insufficient.
+So here is what I want to ask. Given a partially filled matrix with at least one blank, where no blank is forced in this way, can we always fill all the blanks and avoid a diagonal rectangle? Can you turn this into a conjecture and prove or disprove it?

@@ -1,37 +1,12 @@
-Investigate the following conjecture about completing partial binary matrices.
+Suppose we are given a partially filled matrix in {0,1,b}^{m x n}. The b entries are blanks, and we can fill each of them with 0 or 1. We want to keep all the given entries and finish the matrix so that it has no diagonal rectangle of the form
 
-The input is a finite matrix P with entries 0, 1, or ?. Given bits are fixed; a filling chooses 0 or 1 for each ?. Rows and columns retain their given orders. A filling is diagonal-rectangle-free when it contains no four corners of the form
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
 
-1 0
-0 1
+as a submatrix. This rectangle can come from any two rows and any two columns, with the order preserved. In particular, the antidiagonal pattern is allowed; it is the displayed diagonal pattern that we want to avoid.
 
-chosen from rows a < b and columns c < d. Any pair of rows and any pair of columns may be chosen, whether or not they are consecutive.
+There is an obvious sort of forced move. If three corners of a rectangle are filled already, a blank at the remaining corner may have to be 0 or have to be 1. Otherwise we get the forbidden rectangle right away. Such restrictions can stop us from filling the matrix. My question is about the case where there are no forced moves initially. Rectangles with fewer than three filled corners do not count as forcing a blank, even if later choices might create a restriction there.
 
-Two elementary examples illustrate what a filling must accomplish. A possible filling of
-
-1 ?
-? 1
-
-is
-
-1 1
-0 1
-
-On the other hand, no diagonal-rectangle-free filling exists for
-
-1 ? 0
-? 0 1
-0 1 0
-
-A blank may be restricted before any choices have been made. For instance, in
-
-1 0
-? 1
-
-placing 0 at the blank immediately makes a forbidden rectangle, so its required value is 1.
-
-Call a partial matrix viable when it satisfies both of these initial conditions: it has no forbidden rectangle consisting entirely of fixed bits, and every blank individually allows both possible values. Here a value is individually allowed if placing that bit only at that blank creates no forbidden rectangle while all other blanks remain unknown. Only three other already fixed corners can rule out a value in this local test; global extendability is not being assumed.
-
-Conjecture: every viable partial matrix can be filled completely while remaining diagonal-rectangle-free.
-
-Please prove or disprove the conjecture. For a proof, give a rigorous finite argument valid for every finite size. For a refutation, exhibit a finite partial matrix, check its viability, and rigorously show that every filling fails. The conclusion must be justified rather than supported only by a statement that a computational search or solver succeeded.
+If the matrix has at least one blank and none of its blanks is forced by three already filled corners, is a complete filling always possible? Can you formulate this conjecture and either prove it or find a counterexample?

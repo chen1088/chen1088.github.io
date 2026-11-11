@@ -1,37 +1,12 @@
-A partial matrix has m rows and n columns and uses the symbols 0, 1, and ?. Both dimensions are finite. We want to fill every ? with 0 or 1, preserving all prescribed bits, so that no ordered selection of two rows and two columns yields
+Suppose we are trying to finish a matrix in {0,1,b}^{m x n}, where every b is a blank that can become either 0 or 1. We cannot change the entries that are already filled. The rule is that the finished matrix should not have a diagonal rectangle
 
-1 0
-0 1
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
 
-Here the upper selected row must precede the lower one, and the left selected column must precede the right one. Selected indices need not be adjacent. The original row and column orders remain fixed throughout.
+when we pick two rows and two columns. They do not have to be neighboring rows or columns. We just keep their original order, so swapping a row or a column to turn an antidiagonal into this pattern is not allowed.
 
-Call a full filling with this property diagonal-rectangle-free. A simple successful input is
+One thing that can go wrong is that a blank is forced by the other three corners of some rectangle. Those corners are already filled, and one choice for the blank immediately creates the pattern we are avoiding. This gives a reason why some partially filled matrices cannot be completed. Now I want to ask what happens when we remove this difficulty at the beginning. If there is at least one blank and every blank is initially free of this kind of restriction, can the whole matrix always be filled? A rectangle with only zero, one, or two other filled corners does not force a blank in the sense I am using.
 
-1 ?
-? 1
-
-and one of its full fillings is
-
-1 1
-0 1
-
-The input
-
-1 ? 0
-? 0 1
-0 1 0
-
-has no such filling. This is an example of failure in the unrestricted problem.
-
-There is a natural local test on an input. At a blank, inspect rectangles whose three other corners are already prescribed. If a proposed value at the blank would complete the forbidden pattern, it is excluded by that rectangle. For example, the blank in
-
-1 0
-? 1
-
-is forced to 1.
-
-Define viability by requiring that (a) the input contains no forbidden rectangle whose four corners are already prescribed, and (b) every blank passes this initial test for both proposed values, 0 and 1. In (b), assign only the blank being tested and leave every other blank unassigned; the three remaining corners of a witnessing rectangle must come from the originally specified entries.
-
-The conjecture is that every viable input has a diagonal-rectangle-free full filling. Settle this conjecture. An affirmative answer requires a rigorous finite argument for all finite m and n. A negative answer requires an explicit finite partial matrix, a verification that it is viable as defined, and a rigorous proof that every assignment to all of its blanks produces at least one forbidden rectangle.
-
-An unsupported report from a search or solver does not settle the question.
+Can you turn that into a conjecture and prove or disprove it?

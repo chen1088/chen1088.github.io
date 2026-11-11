@@ -1,46 +1,12 @@
-A matrix completion conjecture
+We are given a partially filled matrix in {0,1,b}^{m x n}, where b is a blank entry that we still need to fill with either 0 or 1. We want to fill all the blanks, keeping the existing entries, so that the matrix does not contain a diagonal rectangle
 
-Let A be a finite rectangular matrix whose entries are 0, 1, or ?. A question mark denotes a blank. A completion replaces every blank by either 0 or 1 and leaves every originally specified bit unchanged.
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
 
-Rows and columns retain their given order. A forbidden diagonal rectangle consists of rows i < j and columns p < q with
+as a submatrix. By submatrix, I mean that we can pick any two rows and any two columns, not necessarily consecutive ones. Their order is preserved, so the antidiagonal arrangement is not the pattern we are trying to avoid.
 
-A[i,p] = 1, A[i,q] = 0,
-A[j,p] = 0, A[j,q] = 1.
+It seems that some blanks can be forced immediately: the other three corners of a rectangle are already filled, so putting the wrong bit in the blank would complete a diagonal rectangle. This can cause a matrix to have no filling that avoids the pattern. But what if we do not have any such forced blanks? Suppose there is at least one blank and none of the blanks is forced at the start. Can we always finish filling the matrix? A blank is not forced just because it lies in a rectangle with only two, one, or zero other corners filled.
 
-The corresponding pattern is
-
-1 0
-0 1
-
-The chosen rows and columns need not be consecutive. Call a completed matrix diagonal-rectangle-free if it contains no such four entries.
-
-Here are two examples of the unrestricted completion question. The partial matrix
-
-1 ?
-? 1
-
-has the diagonal-rectangle-free completion
-
-1 1
-0 1
-
-whereas the following partial matrix has no diagonal-rectangle-free completion:
-
-1 ? 0
-? 0 1
-0 1 0
-
-To define an initial local obstruction, consider a blank together with three other corners that are already specified. If assigning a bit to that blank completes a forbidden diagonal rectangle, that bit is locally forbidden there. For example,
-
-1 0
-? 1
-
-forces its blank to be 1.
-
-Call the original partial matrix viable when both of these conditions hold:
-1. No forbidden rectangle is already present using four specified entries.
-2. At every blank, both 0 and 1 are individually locally allowed: assigning either bit to that one blank, while leaving all other blanks unassigned, creates no forbidden rectangle with three originally specified corners.
-
-Prove or disprove the conjecture that every viable partial matrix has a diagonal-rectangle-free completion. The claim ranges over all finite rectangular dimensions. If it is true, give a rigorous finite proof. If it is false, provide an explicit finite partial matrix, verify its viability, and rigorously establish that none of its completions is diagonal-rectangle-free.
-
-An unsupported report from a search or solver does not settle the question.
+Can you formulate this conjecture and prove or disprove it?

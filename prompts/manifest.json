@@ -1,13 +1,9 @@
 {
-  "version": "mfg-poster-1-3-v1",
-  "source": "https://github.com/chen1088/matrix-filling-game/blob/10c998c97eee9ff52cf3fbb3d0e45b9ed23eee8f/poster_np_completeness.tex",
-  "source_sections": [
-    "1. Problem Statement",
-    "2. A small YES and a small NO",
-    "3. The MFG conjecture"
-  ],
-  "task": "Prove or disprove that every viable partial Boolean matrix has a diagonal-rectangle-free completion.",
-  "variation_policy": "Wording and notation vary; mathematical definitions, ordered pattern, examples, and required justification are held fixed. No later-section answers are included.",
+  "version": "mfg-conversational-v2",
+  "basis": "The user-provided conversational prompt, used as the writing and question reference.",
+  "related_poster": "https://github.com/chen1088/matrix-filling-game/blob/10c998c97eee9ff52cf3fbb3d0e45b9ed23eee8f/poster_np_completeness.tex",
+  "task": "Formulate, and prove or disprove, the conjecture that a partially filled Boolean matrix with at least one blank and no initially forced blanks always has a diagonal-rectangle-free completion.",
+  "variation_policy": "Conversational paraphrases follow the supplied example. The ordered pattern, three-corner meaning of an initially forced blank, at-least-one-blank condition, and question are shared. No canned examples, formal output requirements, or later-section answers are included.",
   "selection": "Per-browser shuffled cycles of ten, with no immediate repeat across cycle boundaries. Different visitors can receive the same variant.",
   "legacy_alias": {
     "path": "the-big-blue-button.txt",
@@ -17,62 +13,62 @@
     {
       "id": "mfg-01",
       "file": "mfg-01.txt",
-      "sha256": "680f4fb15df365e22e9a4892563ddd4fe903f0a1e1ea56963886c48658c7db93",
-      "words": 319
+      "sha256": "a64bfe4dd13985cd272a67140cd7301c0ec417468a9ddf585c02007c37945921",
+      "words": 207
     },
     {
       "id": "mfg-02",
       "file": "mfg-02.txt",
-      "sha256": "e965d119cf3cf4c2f3e4d951714bedd2d7df17d5f6034da6d5952542e95cb219",
-      "words": 339
+      "sha256": "40d5a02a6e5fb71b374dd3680c6991c01b3ce7c0b3379855ed2f13a5964de62e",
+      "words": 219
     },
     {
       "id": "mfg-03",
       "file": "mfg-03.txt",
-      "sha256": "6a8532c672b309e610410158c163bed3927a14df794a26c82625af23cf7ab602",
-      "words": 319
+      "sha256": "e814327d512d10aaeaf2530b331d091b420a25538bff65570bd51f820cb196eb",
+      "words": 225
     },
     {
       "id": "mfg-04",
       "file": "mfg-04.txt",
-      "sha256": "0831e712acd43a7a21abf112062c4d697e0ea71e7daff2049a5547f70af74732",
-      "words": 330
+      "sha256": "a9dbba96281c50dfb318c6874eecf5c814bf0e42474885a3706662979fdf1692",
+      "words": 220
     },
     {
       "id": "mfg-05",
       "file": "mfg-05.txt",
-      "sha256": "2ed57925d215b72a7e9ead098d2935ccbc7405509aa639b3a663023169b6ad9c",
-      "words": 334
+      "sha256": "d0708089bf7e68611849be5711656d6f012165ba5006373a151e8b04f6fa2b66",
+      "words": 211
     },
     {
       "id": "mfg-06",
       "file": "mfg-06.txt",
-      "sha256": "ffdbaea70ae122a25921c02388ad59433d2c7186866af1eaa46f7bb7a71b9325",
-      "words": 314
+      "sha256": "e4c5c8932b6049d6e54c3e8fd9baa48e79b034a1379652c668f0b32bade39a59",
+      "words": 221
     },
     {
       "id": "mfg-07",
       "file": "mfg-07.txt",
-      "sha256": "c0231a7482041aaaf2cdc395164ba97bfccf59cf6a5232112c7329d542097f4c",
-      "words": 311
+      "sha256": "9dec896c01a0ca257b97f50579223c4356adc6479a1c6a008b3ce4d1445a581c",
+      "words": 229
     },
     {
       "id": "mfg-08",
       "file": "mfg-08.txt",
-      "sha256": "b6686aef4ee1f6ef2bb3907fe2908659207311198e05e94e5c0ee1172bd02bf7",
-      "words": 316
+      "sha256": "4001f6b26cbd4bb8600afba6b8c110cd3387679aa0d382793c253e5f0e2291a8",
+      "words": 228
     },
     {
       "id": "mfg-09",
       "file": "mfg-09.txt",
-      "sha256": "3c76c3879dc8f61060ea71d579797956c854b98cb4ed84740870b1bfa325c920",
-      "words": 306
+      "sha256": "0ada4a2318b6c2dcef0b3510a97ae41d4bd37c5dc527c14799853afc66dccd43",
+      "words": 220
     },
     {
       "id": "mfg-10",
       "file": "mfg-10.txt",
-      "sha256": "93dc6d49172c8efe6872abd6e01a9507264f9bf75574227226b960fc8e6040f4",
-      "words": 313
+      "sha256": "a45a53334187e0c4ecaa97214b64674d530e546e0a0a97a8da0630468abd6215",
+      "words": 219
     }
   ]
 }

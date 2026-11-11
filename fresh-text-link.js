@@ -4,7 +4,7 @@
   const link = document.getElementById("big-blue-button");
   if (!link) return;
 
-  const VERSION = "mfg-poster-1-3-v1";
+  const VERSION = "mfg-conversational-v2";
   const COUNT = 10;
   const STORAGE_KEY = "chenxu:mfg-prompts:" + VERSION;
   const files = Array.from({ length: COUNT }, (_, i) =>

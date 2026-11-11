@@ -1,39 +1,12 @@
-Consider the following problem about completing a partially specified binary array.
+Here is a matrix filling question I have been thinking about. Start with a partially filled matrix in {0,1,b}^{m x n}. The b entries are blanks, and we are allowed to replace each of them by 0 or 1. The entries that are already filled stay as they are. The goal is to avoid a diagonal rectangle of the form
 
-The array has finitely many rows and columns, each with a fixed order. Its entries lie in {0, 1, ?}. You may replace each ? by a bit, but you may not modify any entry that was already 0 or 1. A completed array is acceptable exactly when, for every pair of rows r < s and columns c < d, its selected entries are not
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
 
-1 0
-0 1
+anywhere in the completed matrix. We can take the two rows and two columns from anywhere, but we keep their original order. So we are looking for this diagonal pattern, not its antidiagonal version.
 
-in that order. The pairs of rows or columns may be separated by other rows or columns; this restriction is not confined to adjacent positions.
+Sometimes a blank already has to be 0 or already has to be 1, because three other corners of a rectangle are filled and one choice would give the forbidden pattern. These immediate restrictions can make a complete filling impossible. What I wonder is whether they are the only problem. If the matrix has at least one blank, and no blank is forced in this way initially, must there be a way to fill it? Having just one or two other corners filled does not count as forcing a blank; the other three need to be there already.
 
-For orientation, this input can be completed:
-
-1 ?
-? 1
-
-One acceptable result is
-
-1 1
-0 1
-
-This other input cannot be completed acceptably:
-
-1 ? 0
-? 0 1
-0 1 0
-
-These are examples of the general completion problem, before imposing the hypothesis below.
-
-A bit is ruled out at a blank if putting it there would form the displayed forbidden rectangle with three other entries already fixed in the input. Thus, in
-
-1 0
-? 1
-
-the missing entry must be 1 to avoid an immediate forbidden rectangle.
-
-Now restrict attention to viable inputs. This means that no forbidden rectangle is already completely specified and that neither bit is ruled out at any blank. More explicitly, for each individual blank, putting 0 there is initially allowed and putting 1 there is initially allowed, with every other blank still unfilled. Only three other originally fixed corners may be used in this local test.
-
-Does every viable input admit an acceptable complete filling? Prove the assertion or refute it. A proof must cover arbitrary finite numbers of rows and columns. A refutation must give a concrete finite input, check that it satisfies the stated viability conditions, and supply a rigorous justification that all complete fillings fail. In either case, establish the conclusion with a finite mathematical argument.
-
-An unsupported report from a search or solver does not settle the question.
+Could you help me state this as a conjecture and then try to prove it or find a counterexample?
