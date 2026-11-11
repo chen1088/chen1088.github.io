@@ -1,0 +1,12 @@
+I have a partially filled 0/1 matrix, which we can write as an element of {0,1,b}^{m x n}, with b standing for a blank. I want to replace every b by a bit without changing any filled entry, and end up with no submatrix that looks like
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+I am calling this a diagonal rectangle. The submatrix can use any pair of rows and any pair of columns, even if they are far apart. We keep the rows and columns in order, though, so an antidiagonal rectangle is a different arrangement and is not what I mean here.
+
+There is an obvious difficulty when a blank is the last unfilled corner of a rectangle. If the other three entries are already there, one of its two possible values might create the diagonal rectangle, which forces us to choose the other value. Such forced choices can prevent us from completing the matrix. But suppose we start with at least one blank and there are no forced blanks at all. Would that be enough to guarantee a filling? I only mean forcing by three already filled corners, not a rectangle in which two or more corners are still blank.
+
+Can you formulate the conjecture carefully and see whether it is true? I would like either a proof or a counterexample.

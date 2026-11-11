@@ -1,0 +1,12 @@
+Suppose we are trying to finish a matrix in {0,1,b}^{m x n}, where every b is a blank that can become either 0 or 1. We cannot change the entries that are already filled. The rule is that the finished matrix should not have a diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+when we pick two rows and two columns. They do not have to be neighboring rows or columns. We just keep their original order, so swapping a row or a column to turn an antidiagonal into this pattern is not allowed.
+
+One thing that can go wrong is that a blank is forced by the other three corners of some rectangle. Those corners are already filled, and one choice for the blank immediately creates the pattern we are avoiding. This gives a reason why some partially filled matrices cannot be completed. Now I want to ask what happens when we remove this difficulty at the beginning. If there is at least one blank and every blank is initially free of this kind of restriction, can the whole matrix always be filled? A rectangle with only zero, one, or two other filled corners does not force a blank in the sense I am using.
+
+Can you turn that into a conjecture and prove or disprove it?

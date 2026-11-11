@@ -1,1 +1,12 @@
-Thanks everyone who cared about my little problem. And, I am sorry I just can't provide the sample prompts. Imagine what happens if some company detects an absurd amount of the identical prompts in a short amount of time.
+We are given a partially filled matrix in {0,1,b}^{m x n}, where b is a blank entry that we still need to fill with either 0 or 1. We want to fill all the blanks, keeping the existing entries, so that the matrix does not contain a diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. By submatrix, I mean that we can pick any two rows and any two columns, not necessarily consecutive ones. Their order is preserved, so the antidiagonal arrangement is not the pattern we are trying to avoid.
+
+It seems that some blanks can be forced immediately: the other three corners of a rectangle are already filled, so putting the wrong bit in the blank would complete a diagonal rectangle. This can cause a matrix to have no filling that avoids the pattern. But what if we do not have any such forced blanks? Suppose there is at least one blank and none of the blanks is forced at the start. Can we always finish filling the matrix? A blank is not forced just because it lies in a rectangle with only two, one, or zero other corners filled.
+
+Can you formulate this conjecture and prove or disprove it?

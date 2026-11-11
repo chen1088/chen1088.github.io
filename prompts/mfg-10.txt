@@ -1,0 +1,12 @@
+I am wondering whether the following matrix filling idea is true. Start with a matrix in {0,1,b}^{m x n}, where b means a blank that we need to fill with 0 or 1. The existing 0s and 1s cannot be changed. We are looking for a filling that avoids the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. By submatrix I mean that we pick any two rows and any two columns and keep their order. We are not also forbidding the antidiagonal pattern.
+
+A difficulty is that some blanks may already be forced. For example, when three corners of a rectangle have been filled, one choice at the fourth corner can make a diagonal rectangle, so we have to choose the other value. Some partial matrices cannot be completed because these restrictions get in the way. But suppose that no blank has any restriction of this kind in the starting matrix. Having just zero, one, or two corners filled in a rectangle is not enough to call one of its blanks forced.
+
+Would that be enough to guarantee that we can fill the whole matrix? Assume there is at least one blank and none is forced by three filled corners. Can you formulate the conjecture and work out a proof or a counterexample?

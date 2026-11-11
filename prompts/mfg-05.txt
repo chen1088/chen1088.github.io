@@ -1,0 +1,12 @@
+There is a simple matrix problem I would like to understand. We have a partially filled matrix in {0,1,b}^{m x n}, with b denoting a blank, and we fill the blanks using 0 and 1 while leaving the existing entries alone. We want the result to avoid
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. Here we can choose any two rows and any two columns, with their order preserved. They need not be consecutive. I mean this particular diagonal rectangle; an antidiagonal arrangement does not count as one.
+
+Some blanks may have an immediate forced value. For example, if the other three corners of a rectangle are already filled, choosing one bit for the blank might complete the unwanted pattern, so we have to choose the other bit. Those restrictions can make it impossible to finish. But I wonder whether a matrix without any such forced blanks can still be impossible to fill. Assume it has at least one blank, and none is forced at the outset. Rectangles with fewer than three other filled corners do not count as forcing anything here, even if they might matter after more blanks are filled.
+
+Can you formulate the conjecture suggested by this and either prove it or disprove it?

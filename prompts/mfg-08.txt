@@ -1,0 +1,12 @@
+I have been thinking about filling the blanks of a Boolean matrix. More precisely, the starting matrix is in {0,1,b}^{m x n}, where b is a blank entry that still needs a 0 or a 1. We leave the entries already filled alone. The finished matrix should not contain a diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. We can choose any two rows and any two columns to get this rectangle, keeping their order. An antidiagonal arrangement is not the same forbidden pattern.
+
+It is easy to see how a blank can be forced: if the other three corners are already filled, one value might immediately make a diagonal rectangle, so that value cannot be used. Some matrices fail to have a completion because of restrictions like this. But what happens if there are no such forced blanks at the start? I only mean this direct three-corner restriction. A blank in a rectangle with two filled corners, one filled corner, or no filled corners does not count as forced on that account.
+
+So here is what I want to ask. Given a partially filled matrix with at least one blank, where no blank is forced in this way, can we always fill all the blanks and avoid a diagonal rectangle? Can you turn this into a conjecture and prove or disprove it?
