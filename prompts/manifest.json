@@ -1,10 +1,11 @@
 {
-  "version": "mfg-conversational-v2",
-  "basis": "The user-provided conversational prompt, used as the writing and question reference.",
+  "version": "mfg-conversational-50-v3",
+  "basis": "The user-provided conversational example, with the starting conditions made explicit in natural prose.",
   "related_poster": "https://github.com/chen1088/matrix-filling-game/blob/10c998c97eee9ff52cf3fbb3d0e45b9ed23eee8f/poster_np_completeness.tex",
-  "task": "Formulate, and prove or disprove, the conjecture that a partially filled Boolean matrix with at least one blank and no initially forced blanks always has a diagonal-rectangle-free completion.",
-  "variation_policy": "Conversational paraphrases follow the supplied example. The ordered pattern, three-corner meaning of an initially forced blank, at-least-one-blank condition, and question are shared. No canned examples, formal output requirements, or later-section answers are included.",
-  "selection": "Per-browser shuffled cycles of ten, with no immediate repeat across cycle boundaries. Different visitors can receive the same variant.",
+  "task": "Formulate, and prove or disprove, whether every partial Boolean matrix with at least one blank, no already-filled diagonal rectangle, and no initially ruled-out bit at any blank has a diagonal-rectangle-free completion.",
+  "initial_local_condition": "For each blank separately, both bits are allowed when checked against the originally filled entries. A forbidden choice would complete the displayed ordered pattern with three other originally filled corners. Later choices need not remain unrestricted.",
+  "variation_policy": "Conversational wording and length vary. The ordered pattern, starting conditions, preservation of given entries, and question stay fixed. No solutions, later-section answers, or formal output requirements are included.",
+  "selection": "Per-browser shuffled cycles of fifty, with no immediate repeat across cycle boundaries. Different visitors can receive the same variant.",
   "legacy_alias": {
     "path": "the-big-blue-button.txt",
     "variant": "mfg-01"
@@ -13,62 +14,302 @@
     {
       "id": "mfg-01",
       "file": "mfg-01.txt",
-      "sha256": "a64bfe4dd13985cd272a67140cd7301c0ec417468a9ddf585c02007c37945921",
-      "words": 207
+      "sha256": "0c52672eb525e6df17213f671d19a8a80fb7d34e6373d01f6a120e8aea82cbff",
+      "words": 226
     },
     {
       "id": "mfg-02",
       "file": "mfg-02.txt",
-      "sha256": "40d5a02a6e5fb71b374dd3680c6991c01b3ce7c0b3379855ed2f13a5964de62e",
-      "words": 219
+      "sha256": "d7ebeb360bc1b86a82c831e4fa71d3a3f4997e44e77022417cb3e44cbf161a9a",
+      "words": 235
     },
     {
       "id": "mfg-03",
       "file": "mfg-03.txt",
-      "sha256": "e814327d512d10aaeaf2530b331d091b420a25538bff65570bd51f820cb196eb",
-      "words": 225
+      "sha256": "c0c6fbf3ca5e9734baf0fbf5fcf0776a138d811fe4b1070d55d6d9137eac2edc",
+      "words": 239
     },
     {
       "id": "mfg-04",
       "file": "mfg-04.txt",
-      "sha256": "a9dbba96281c50dfb318c6874eecf5c814bf0e42474885a3706662979fdf1692",
-      "words": 220
+      "sha256": "4786758e9a5e3f7c1285789dbd1e97d6abcc079876f50bbfc9bae10501395946",
+      "words": 231
     },
     {
       "id": "mfg-05",
       "file": "mfg-05.txt",
-      "sha256": "d0708089bf7e68611849be5711656d6f012165ba5006373a151e8b04f6fa2b66",
-      "words": 211
+      "sha256": "2868fc7de6b23ba16c8b26e821df886789366a050d05ed226cc278e2cb1e4d7c",
+      "words": 231
     },
     {
       "id": "mfg-06",
       "file": "mfg-06.txt",
-      "sha256": "e4c5c8932b6049d6e54c3e8fd9baa48e79b034a1379652c668f0b32bade39a59",
-      "words": 221
+      "sha256": "730d8ed22d1fea19a3b8af1b75aa5ea91ba36801ea61b97878334e0759d27488",
+      "words": 232
     },
     {
       "id": "mfg-07",
       "file": "mfg-07.txt",
-      "sha256": "9dec896c01a0ca257b97f50579223c4356adc6479a1c6a008b3ce4d1445a581c",
-      "words": 229
+      "sha256": "f6c2fa79ef9e1cb8235287c7c2f0349a20620afab773c1dc4eecba5fc04cf3de",
+      "words": 255
     },
     {
       "id": "mfg-08",
       "file": "mfg-08.txt",
-      "sha256": "4001f6b26cbd4bb8600afba6b8c110cd3387679aa0d382793c253e5f0e2291a8",
-      "words": 228
+      "sha256": "7826060fba8d07613bafb2a167b4b37787fdedf6ec21757a589faa2bbcdecfba",
+      "words": 244
     },
     {
       "id": "mfg-09",
       "file": "mfg-09.txt",
-      "sha256": "0ada4a2318b6c2dcef0b3510a97ae41d4bd37c5dc527c14799853afc66dccd43",
-      "words": 220
+      "sha256": "a01e7c306b348d4195fc5b1396af2dde334110ebb24feba465cbea2e064d2c98",
+      "words": 236
     },
     {
       "id": "mfg-10",
       "file": "mfg-10.txt",
-      "sha256": "a45a53334187e0c4ecaa97214b64674d530e546e0a0a97a8da0630468abd6215",
-      "words": 219
+      "sha256": "18657613327bdc04e7c10086b3d2055f80cf9022c30cde6343867589f2bfdbb6",
+      "words": 240
+    },
+    {
+      "id": "mfg-11",
+      "file": "mfg-11.txt",
+      "sha256": "94a2a0d7e9fcab640ae3be38727ddb64eb7ee2fbc03bb26b669beb0140ea53a2",
+      "words": 170
+    },
+    {
+      "id": "mfg-12",
+      "file": "mfg-12.txt",
+      "sha256": "9190e6156b262985b288f0e2a06cf974ee64f071a27b254b8d6dcc8fba05f303",
+      "words": 250
+    },
+    {
+      "id": "mfg-13",
+      "file": "mfg-13.txt",
+      "sha256": "9e7deddb89d104888cc3bbfddb63e8593e85bc21d471b30fa7291482e1cfa78a",
+      "words": 246
+    },
+    {
+      "id": "mfg-14",
+      "file": "mfg-14.txt",
+      "sha256": "5670786ce739d269593280e8a979672c2dcf1acbee11bc551d317a0da795ec02",
+      "words": 184
+    },
+    {
+      "id": "mfg-15",
+      "file": "mfg-15.txt",
+      "sha256": "60a18ab49ba945ec8e9e569b39fff8ec6b75f8951c16ffb4a0d3c475751b8465",
+      "words": 241
+    },
+    {
+      "id": "mfg-16",
+      "file": "mfg-16.txt",
+      "sha256": "1912365ebaa25650d1ab8c39dcbe9b2701058eabdfd1f890b3e12b8f3dac5f29",
+      "words": 250
+    },
+    {
+      "id": "mfg-17",
+      "file": "mfg-17.txt",
+      "sha256": "5c59fede7e4fd3352a28228f7099658f6bf49fa2a150a8ca1eb4de9a89831c90",
+      "words": 246
+    },
+    {
+      "id": "mfg-18",
+      "file": "mfg-18.txt",
+      "sha256": "8c798f8452c587d2ea7cda0d6ed3727b4c63bb21075a70c062da8798950ab1f5",
+      "words": 168
+    },
+    {
+      "id": "mfg-19",
+      "file": "mfg-19.txt",
+      "sha256": "3d676748180c2ac4f097b90c44e09963e964d3a1c4917cb686000a0d62fa40fa",
+      "words": 250
+    },
+    {
+      "id": "mfg-20",
+      "file": "mfg-20.txt",
+      "sha256": "7a2c3c9e85ff68d4bbb1b9c9ef832ecd7c7741008ee7169fa237bc6cde5cf11b",
+      "words": 262
+    },
+    {
+      "id": "mfg-21",
+      "file": "mfg-21.txt",
+      "sha256": "4699afcc9fa20c93b6f551be714a2ae1a445646d58080efdd29bb36ed98594d1",
+      "words": 156
+    },
+    {
+      "id": "mfg-22",
+      "file": "mfg-22.txt",
+      "sha256": "2d472b433acc1d414e9c85d0cc5c09e057d16b0cc41b664f42b22c1aa3d91a96",
+      "words": 287
+    },
+    {
+      "id": "mfg-23",
+      "file": "mfg-23.txt",
+      "sha256": "efe5d13f4190d9e49a664192b23d45352648cb511ca67d517fb4f54eb5ab7f7f",
+      "words": 236
+    },
+    {
+      "id": "mfg-24",
+      "file": "mfg-24.txt",
+      "sha256": "df964eeb3a49cee7982af68dd14c138e29dfab624741118d7acb46bd48400abb",
+      "words": 146
+    },
+    {
+      "id": "mfg-25",
+      "file": "mfg-25.txt",
+      "sha256": "84ac8be076f0a55f678c7c960961caef8f66b5fc4b55a1024bac0fd014321ea0",
+      "words": 276
+    },
+    {
+      "id": "mfg-26",
+      "file": "mfg-26.txt",
+      "sha256": "b910b93fa2ff4f575d23d45dcb3c1331ce77a4f93a2f353a794b8588b5e4edfb",
+      "words": 236
+    },
+    {
+      "id": "mfg-27",
+      "file": "mfg-27.txt",
+      "sha256": "761c43e770f7ca5a9a7d033aae9cace3d9c4c53b1a4c4998961460407623f077",
+      "words": 239
+    },
+    {
+      "id": "mfg-28",
+      "file": "mfg-28.txt",
+      "sha256": "6b84a492feb632cffb0a6ec57b6e85ff972afc1325cc2f5abc57902542c8c783",
+      "words": 177
+    },
+    {
+      "id": "mfg-29",
+      "file": "mfg-29.txt",
+      "sha256": "ff03ff745981738e93b19a4d56ade22021475c5cfdb436762f7c738c30c7ec90",
+      "words": 242
+    },
+    {
+      "id": "mfg-30",
+      "file": "mfg-30.txt",
+      "sha256": "003bee9497956c178f9e60b40834f0934d06311a11a3e1ecde6b3f6208e002f4",
+      "words": 234
+    },
+    {
+      "id": "mfg-31",
+      "file": "mfg-31.txt",
+      "sha256": "be3c493b4a8f1ca0281485f562584a7452aaf36fa974cb361874e1975f67c810",
+      "words": 151
+    },
+    {
+      "id": "mfg-32",
+      "file": "mfg-32.txt",
+      "sha256": "6b19b00383f0a8470c224adcbd17e95d171c455ef275f467181ffa223a0f918d",
+      "words": 253
+    },
+    {
+      "id": "mfg-33",
+      "file": "mfg-33.txt",
+      "sha256": "7cd623c484fc4b7a4e73b0a9b91e5d8e2855841fbef6bad19232814ba41817b2",
+      "words": 179
+    },
+    {
+      "id": "mfg-34",
+      "file": "mfg-34.txt",
+      "sha256": "0ca7814038b218ab9a98ab841593a4e27754ef21bfc25cef601b58326de1e94f",
+      "words": 286
+    },
+    {
+      "id": "mfg-35",
+      "file": "mfg-35.txt",
+      "sha256": "ac3b2a7b9a9743fa9e837915b76e2e5c35d70f06a0402a47b62a6e9e19fcc550",
+      "words": 257
+    },
+    {
+      "id": "mfg-36",
+      "file": "mfg-36.txt",
+      "sha256": "f8bbfeec8974fcd261f172440cb57c2bbee389898eef21adb05d9a8686c5c07c",
+      "words": 186
+    },
+    {
+      "id": "mfg-37",
+      "file": "mfg-37.txt",
+      "sha256": "1bbf751e354982426b11104552a8eaf5a90a7e57e59c58699aa1ca8b838f25b1",
+      "words": 295
+    },
+    {
+      "id": "mfg-38",
+      "file": "mfg-38.txt",
+      "sha256": "bbc3d8e0fcc4eb88e77be36e544aa0f7daff8695b1e6259bee74973a11233dee",
+      "words": 249
+    },
+    {
+      "id": "mfg-39",
+      "file": "mfg-39.txt",
+      "sha256": "fb91d0a1a0ad1a64d4c8f64047d844045ff37da043abeb765a94a075901f6295",
+      "words": 174
+    },
+    {
+      "id": "mfg-40",
+      "file": "mfg-40.txt",
+      "sha256": "87f4aa795fd604c3675393d168e01f61ce6a063a280d013f3802153e3a51dee9",
+      "words": 280
+    },
+    {
+      "id": "mfg-41",
+      "file": "mfg-41.txt",
+      "sha256": "3456bfafad3ebdb91513c8235dd75312454b04164a5b2261340efdc0639c6145",
+      "words": 228
+    },
+    {
+      "id": "mfg-42",
+      "file": "mfg-42.txt",
+      "sha256": "35e3e3f2972960408e2fc27b33eb527b24e03eb3d02b13052c9c2d9f04fb947d",
+      "words": 172
+    },
+    {
+      "id": "mfg-43",
+      "file": "mfg-43.txt",
+      "sha256": "0f6a7ca1d008ef070c4bdc9618aee536fc9c8808abc1c8071210f66391164261",
+      "words": 240
+    },
+    {
+      "id": "mfg-44",
+      "file": "mfg-44.txt",
+      "sha256": "fad53539636c2c961bc765aa5a8f0d73193b586699103b7da4799c9580a6abad",
+      "words": 234
+    },
+    {
+      "id": "mfg-45",
+      "file": "mfg-45.txt",
+      "sha256": "35365cef2632c719a51a6fcb7224182f6215e7bff616aca21d8bfd51ab805bb4",
+      "words": 245
+    },
+    {
+      "id": "mfg-46",
+      "file": "mfg-46.txt",
+      "sha256": "beeeef165f419e0e9b31b64222a7fdfda2aa5c40204bdcc1605fceaa9a55974e",
+      "words": 252
+    },
+    {
+      "id": "mfg-47",
+      "file": "mfg-47.txt",
+      "sha256": "c3c2156ae4c98a94f72653f4306dd92d5f41c85db4f16b6d9cfe553fa2f81c82",
+      "words": 192
+    },
+    {
+      "id": "mfg-48",
+      "file": "mfg-48.txt",
+      "sha256": "e11286e7c841833b0dcdf824e319d453798385ea7eb4087bf427ee85cdec7580",
+      "words": 243
+    },
+    {
+      "id": "mfg-49",
+      "file": "mfg-49.txt",
+      "sha256": "2abc7385ce69854edcfcd97cd601007115f1bebbd505680d0885601ba4d96194",
+      "words": 241
+    },
+    {
+      "id": "mfg-50",
+      "file": "mfg-50.txt",
+      "sha256": "b05aca2b55cad64b0ae42f774ce4c7650a416d03031bcf64ab781d92970f7042",
+      "words": 239
     }
   ]
 }

@@ -1,0 +1,14 @@
+I can see why a matrix filling problem might fail when some blanks are already forced to be 0 or 1. What I am less sure about is what happens when every blank starts without such a restriction.
+
+We are given a partially filled matrix in {0,1,b}^{m x n}. Here b is a blank that we can replace by either 0 or 1, while the given bits cannot be changed. Our aim is to fill all the blanks without creating a diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. The two rows and two columns can be chosen from anywhere in the matrix, not just next to each other. We preserve their order, so an antidiagonal arrangement does not count as this pattern. The given entries do not already contain a diagonal rectangle.
+
+A blank is immediately forced when the other three corners of a rectangle are already filled and one choice for the blank would give the forbidden pattern. I am not counting rectangles with only zero, one, or two other filled corners as forcing a blank. Those are still waiting on more than one choice.
+
+Suppose the matrix has at least one blank and no blank is forced at the start: we can try either 0 or 1 in any one blank, leaving the other blanks alone, without completing a diagonal rectangle. Does that always leave a way to complete the matrix? Please help me formulate the conjecture and either prove it or find a counterexample.

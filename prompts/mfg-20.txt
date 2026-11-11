@@ -1,0 +1,12 @@
+Let us start with a partially filled matrix in {0,1,b}^{m x n}, where b is a blank entry. We are allowed to choose 0 or 1 for each blank, but all the entries already filled must stay fixed. The goal is to avoid having a diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix after we finish. Here the submatrix comes from any two rows and any two columns, keeping their order. They can be far apart. The antidiagonal arrangement is not the pattern we are excluding. Let us assume the entries given at the beginning do not already contain a diagonal rectangle.
+
+There may be blanks whose values are forced before we make any choices. If the other three corners of a rectangle are filled, one choice at its blank corner may immediately produce the forbidden pattern. That leaves only the other choice. Restrictions of this sort can make it impossible to finish a partial matrix. But suppose either 0 or 1 can be put in any one blank without creating a diagonal rectangle with the original entries, while all the other blanks remain unfilled. A blank in a rectangle with only two, one, or zero other corners filled is not forced on that account; I mean a restriction coming from three corners that are already filled.
+
+Now assume there is at least one blank. Is the absence of these immediate restrictions enough to guarantee that we can fill them all? Could you formulate the conjecture and work out whether it has a proof or a counterexample?

@@ -1,0 +1,10 @@
+Can having no forced blanks be enough to finish a matrix? Start with a partial matrix in {0,1,b}^{m x n}. Each b is a blank to become 0 or 1, and we leave the given bits unchanged. We want to avoid the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix from any two rows and any two columns, not necessarily consecutive, with the order preserved. The antidiagonal is allowed. Assume the filled entries do not already make a diagonal rectangle.
+
+A blank is immediately forced if three other corners are already filled so that one bit creates the forbidden pattern and we must choose the other. Rectangles with fewer than three other corners filled do not force a blank in this sense. Suppose there is at least one blank, and at the beginning either bit can go in any one blank without creating a diagonal rectangle while the other blanks stay blank. Must there always be a complete filling avoiding diagonal rectangles? Can you formulate the conjecture and prove or disprove it?

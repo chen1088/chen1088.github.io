@@ -5,8 +5,8 @@ $$\begin{bmatrix}
 0 & 1
 \end{bmatrix}$$
 
-as a submatrix. By submatrix, I mean that we can pick any two rows and any two columns, not necessarily consecutive ones. Their order is preserved, so the antidiagonal arrangement is not the pattern we are trying to avoid.
+as a submatrix. By submatrix, I mean that we can pick any two rows and any two columns, not necessarily consecutive ones. Their order is preserved, so the antidiagonal arrangement is not the pattern we are trying to avoid. Assume there is no diagonal rectangle among the entries already filled.
 
-It seems that some blanks can be forced immediately: the other three corners of a rectangle are already filled, so putting the wrong bit in the blank would complete a diagonal rectangle. This can cause a matrix to have no filling that avoids the pattern. But what if we do not have any such forced blanks? Suppose there is at least one blank and none of the blanks is forced at the start. Can we always finish filling the matrix? A blank is not forced just because it lies in a rectangle with only two, one, or zero other corners filled.
+It seems that some blanks can be forced immediately: the other three corners of a rectangle are already filled, so putting the wrong bit in the blank would complete a diagonal rectangle. This can cause a matrix to have no filling that avoids the pattern. But what if we do not have any such forced blanks? Suppose there is at least one blank and, at the start, either bit can go into any blank without making a diagonal rectangle right away. Can we always finish filling the matrix? A blank is not forced just because it lies in a rectangle with only two, one, or zero other corners filled.
 
 Can you formulate this conjecture and prove or disprove it?

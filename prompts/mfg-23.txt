@@ -1,0 +1,12 @@
+I have a question where the local choices seem fairly simple, but I am unsure what they tell us about filling the whole matrix. The starting point is a partially filled matrix in {0,1,b}^{m x n}. Here b is a blank to be replaced by 0 or 1, and all the entries already given have to stay. We want to avoid
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. We may select any two rows and any two columns, with their order preserved, so they need not be adjacent. The antidiagonal pattern is not forbidden. We start with no diagonal rectangle already formed by the given entries.
+
+An immediate forced choice happens when three corners of a rectangle are filled already and one bit at the last corner would create this diagonal rectangle. We then have to use the other bit. Restrictions like these can stop a matrix from being completed. But suppose that, in the starting matrix, no blank has a forced choice. Having fewer than three other corners filled does not make a blank forced in the sense I mean here.
+
+If we have at least one blank, and putting either bit into any one blank creates no diagonal rectangle with the given entries, can we always fill the matrix completely? I would like to turn that into a conjecture. Can you formulate it and either prove it or disprove it?

@@ -1,0 +1,12 @@
+Consider a matrix filling problem where the entries given to us lie in {0,1,b}^{m x n}. The symbol b means we still need to choose 0 or 1 for that entry. We keep every existing 0 and 1, and try to fill the blanks so that no diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+appears as a submatrix. By that I mean choosing any two rows and any two columns in their original order. They need not be consecutive. The antidiagonal arrangement is not a forbidden pattern here. The fixed entries do not already give a rectangle of the displayed kind.
+
+If three corners of a rectangle are filled already, the last corner can have a forced value: choosing the other bit would give the pattern right away. Some starting matrices cannot be completed because of restrictions like these. What I would like to ask is whether a matrix with no such forced blanks can always be completed. A rectangle with only two filled corners, one filled corner, or no filled corners does not force one of its blanks in the sense I am using.
+
+Suppose there is at least one blank, and we can put either 0 or 1 into any one blank without immediately completing a diagonal rectangle with three given corners. Is there always a way to fill all the blanks and avoid diagonal rectangles? Can you formulate the conjecture and prove it or give a counterexample?

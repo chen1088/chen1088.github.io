@@ -1,0 +1,12 @@
+We have a partially filled matrix in {0,1,b}^{m x n}, where b is blank. We replace the blanks by 0 or 1, keeping the given entries, and want to avoid the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+on any two rows and columns in their original order, not necessarily adjacent ones. The antidiagonal pattern is allowed. The given entries do not already contain the forbidden pattern.
+
+A blank can be forced when three other corners are already filled: one choice there completes the pattern, so we must use the other. Rectangles with fewer filled corners do not count as forcing a blank here.
+
+What if there is at least one blank, and we can put either 0 or 1 in any single blank at the start without immediately making this rectangle? Can we always finish filling it? Could you formulate this conjecture and prove or disprove it?

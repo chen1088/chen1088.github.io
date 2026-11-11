@@ -1,0 +1,12 @@
+Can the absence of forced blanks guarantee a complete filling? We have a matrix in {0,1,b}^{m x n}, where b is blank. Replace each b by 0 or 1, keeping the given entries, and avoid the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. We can choose any two rows and any two columns, not necessarily adjacent, with their order preserved. An antidiagonal arrangement is allowed. The given entries do not already contain the forbidden rectangle.
+
+A blank is forced when three other corners are filled already and one choice at the blank would complete this pattern. A rectangle with only zero, one, or two other filled corners does not count as forcing it.
+
+Now suppose there is at least one blank, and either 0 or 1 can go into any one blank initially, without making the rectangle while the other blanks stay blank. Must there be a way to fill all the blanks? Can you formulate this as a conjecture and either prove it or give a counterexample?

@@ -1,0 +1,12 @@
+I am wondering about the following way of filling a matrix. Take a partially filled matrix in {0,1,b}^{m x n}, with b denoting a blank. We fill each blank with 0 or 1 and keep all the entries already present. We would like the result to have no submatrix looking like
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+I call this a diagonal rectangle. We can choose the two rows and two columns from anywhere in the matrix, including nonconsecutive ones, but preserve their order. The antidiagonal arrangement does not count as this pattern. Assume the filled entries we are given have no diagonal rectangle already, since otherwise there would be nothing a filling could do about it.
+
+The first obstruction I can see is a forced blank. If the other three corners of some rectangle are already filled, one value at the blank would complete a diagonal rectangle, forcing the other value. This can lead to a matrix that cannot be completed. What I want to ask is whether we can still fail when there are no forced blanks at the start. I do not mean a blank in a rectangle with only one or two other corners filled, or none; all three other corners have to be filled already. I am looking at what the original matrix forces directly, before we have made any of our own choices for the blanks.
+
+Suppose there is at least one blank and neither 0 nor 1 creates a diagonal rectangle when tried at any one blank against the originally filled entries. Does a completion always exist? Can you formulate that conjecture and prove or disprove it?

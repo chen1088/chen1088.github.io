@@ -1,0 +1,12 @@
+I was looking at a matrix in {0,1,b}^{m x n}, where b is a blank to be filled with 0 or 1. We keep the given entries and try to avoid
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. We can pick any two rows and columns, not necessarily consecutive ones, but preserve their order. The antidiagonal pattern is allowed. The filled entries do not already contain the displayed pattern.
+
+Three filled corners can force the value at a blank fourth corner, since one choice would complete a diagonal rectangle. Such restrictions can make filling impossible. But suppose there is at least one blank, and we can try either 0 or 1 at any one blank without immediately making the pattern from the given entries. Here I only mean an immediate restriction from three other filled corners, not a rectangle with two, one, or zero corners filled.
+
+Can we always finish filling such a matrix without a diagonal rectangle? Could you formulate the conjecture and prove or disprove it?

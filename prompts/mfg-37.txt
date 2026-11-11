@@ -1,0 +1,14 @@
+The easy restrictions in this matrix problem come from rectangles with just one corner left blank. Three entries are already fixed, and sometimes they make one of the two choices at the last corner impossible. I am curious about instances where this never happens at the start. It feels like there should be plenty of room to make choices then, but I do not know whether that is enough to finish everything.
+
+The matrix is partially filled, so its entries lie in {0,1,b}^{m x n}, with b standing for blank. We need to fill every b with 0 or 1 without changing the given bits. We are trying to avoid the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. We can use any two rows and any two columns, including ones that are not consecutive, while keeping their order. The antidiagonal pattern is allowed. We start with given entries that do not already form the forbidden rectangle.
+
+I call a blank forced if three other corners are already filled and choosing one value there immediately gives the displayed pattern. The blank must then use the other value. This refers to the original matrix, before we fill anything else. A blank is not counted as forced merely because it belongs to a rectangle with zero, one, or two other corners filled.
+
+Suppose we have at least one blank and no forced blanks in this sense. I mean that either value can be used at any single blank at the start, with all other blanks left blank, without creating the rectangle. Is there always some way to fill the entire matrix without a diagonal rectangle? Could you formulate the conjecture behind this question and decide it by a proof or a counterexample?

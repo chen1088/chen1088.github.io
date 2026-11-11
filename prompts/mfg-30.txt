@@ -1,0 +1,12 @@
+I would like to understand what happens when a partial matrix has no obvious forced move. The matrix is in {0,1,b}^{m x n}, where b is a blank to be filled with 0 or 1. We keep the existing entries and try to fill all the blanks so that there is no diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. Any two rows and any two columns can be picked, including nonconsecutive ones, but we keep their order. An antidiagonal rectangle is not what we are forbidding. The filled entries we begin with do not already contain the forbidden pattern.
+
+By a forced move I mean that three corners of a rectangle are already filled and one choice at the blank fourth corner would create the displayed pattern. This forces us to use the other bit. Such restrictions can make a partial matrix impossible to complete. However, suppose the given matrix has at least one blank, and either bit can be put into each blank individually without creating a diagonal rectangle using the entries already filled. If only zero, one, or two other corners are filled in a rectangle, that does not make a blank forced here.
+
+Can we then always finish the matrix while avoiding diagonal rectangles? Could you formulate the conjecture suggested by this and work out whether it is true, by a proof or a counterexample?

@@ -1,0 +1,12 @@
+I have been looking at a matrix filling problem. The input is a matrix in {0,1,b}^{m x n}, where b stands for an entry that is still blank. We may put either 0 or 1 in each blank, but we cannot alter the entries already filled. We want the final matrix to have no diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. We can select the two rows and the two columns from anywhere, preserving their order. They need not be consecutive, and the antidiagonal pattern is not the one being forbidden. The given entries are assumed not to contain a diagonal rectangle already.
+
+The obvious thing to check is whether any blank already has a forced value. Three filled corners can make one choice at the fourth corner immediately create the pattern, so we must choose the other value. This sort of restriction can stop us from completing a partial matrix. But I am wondering if it can fail even without any forced blanks at the start. Say there is at least one blank, and putting either 0 or 1 in any one blank, with all the other blanks left empty, makes no diagonal rectangle with the given entries. Could the matrix still have no suitable filling? A rectangle with fewer than three other filled corners does not count as forcing anything yet.
+
+Could you put this conjecture into words and prove or disprove it?

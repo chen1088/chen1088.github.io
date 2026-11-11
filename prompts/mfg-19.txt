@@ -1,0 +1,12 @@
+There is a question about partial Boolean matrices that I want to explore. We write the starting matrix as an element of {0,1,b}^{m x n}, with b meaning a blank. The task is to put a 0 or a 1 in each blank while leaving the existing entries unchanged. We want to avoid the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. We may pick any two rows and any two columns to see this pattern. They need not be adjacent, but they keep their order. The antidiagonal pattern is not forbidden. Assume the given entries do not already contain the diagonal pattern we want to avoid.
+
+Sometimes three corners that are already filled tell us what must go in a blank at the remaining corner. One of its possible values would give the diagonal rectangle, so it is forced to take the other. This can lead to a partial matrix that cannot be completed. My question is whether a completion is guaranteed if we have at least one blank and either 0 or 1 can go in any one blank without making a diagonal rectangle with the original entries. The other blanks stay blank when considering each choice. Rectangles with only zero, one, or two other corners filled do not count as forcing a blank; I am only talking about the direct restriction from three filled corners.
+
+Can you formulate this conjecture and either prove it or find an example showing that it fails?

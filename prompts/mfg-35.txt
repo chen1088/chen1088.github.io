@@ -1,0 +1,14 @@
+I understand the obvious forced moves in this filling problem, but I am not sure whether they explain all the ways a completion can fail. Consider a partially filled matrix in {0,1,b}^{m x n}, with b denoting a blank. We can fill a blank with 0 or 1, but we must keep all the existing entries.
+
+What we want to avoid in the completed matrix is the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. We are allowed to pick any two rows and any two columns, even if they are separated by other rows or columns. We keep their original order. In particular, an antidiagonal rectangle is not what we are forbidding. Assume the filled entries do not already give the displayed pattern.
+
+A forced move occurs when three corners of a rectangle are already filled, and one choice for the blank at the fourth corner completes the displayed pattern. The blank then has to take the other value. A rectangle with only zero, one, or two other filled corners does not force a blank in the sense intended here.
+
+Now suppose the matrix has at least one blank and no forced moves before we start filling anything. In other words, testing either 0 or 1 at any one blank against the original filled entries does not complete a diagonal rectangle. Is there necessarily a way to finish the filling? I would like to turn this into a conjecture. Can you formulate it and either prove it or give a counterexample?

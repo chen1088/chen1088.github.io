@@ -5,7 +5,7 @@ $$\begin{bmatrix}
 0 & 1
 \end{bmatrix}$$
 
-as a submatrix. Here we can pick any two rows and any two columns, but we keep their order. We are excluding this diagonal pattern, not the antidiagonal one.
+as a submatrix. Here we can pick any two rows and any two columns, but we keep their order. We are excluding this diagonal pattern, not the antidiagonal one. Assume the filled entries do not already contain the displayed pattern.
 
 Sometimes three corners of a rectangle are already filled, and this forces the last corner to be 0 or 1. If we put the other value there, we immediately get the forbidden rectangle. These forced choices can cause trouble, and some partial matrices cannot be completed at all. But I am wondering whether we can still run into trouble when none of the blanks is forced to begin with. A rectangle with only one or two filled corners does not force a blank in this sense; nor does one with no filled corners.
 

@@ -1,0 +1,12 @@
+Suppose someone gives us a matrix in {0,1,b}^{m x n}, with b marking the places that have not been filled yet. We can put 0 or 1 in those places, but cannot change the existing entries. What we want is a completed matrix without a submatrix of the form
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+This is the diagonal rectangle I want to avoid. Its rows and columns can be any two rows and any two columns, even nonconsecutive ones. Their order stays the same; an antidiagonal rectangle is allowed. Let us start with a matrix whose filled entries do not already contain a diagonal rectangle, so we are asking whether we can finish it without introducing one.
+
+Some choices may already be forced before we fill anything. Three filled corners of a rectangle can mean that only one bit is possible at the blank corner, because the other bit immediately creates a diagonal rectangle. These restrictions can prevent a completion. I wonder if a matrix can still be impossible to complete when we do not have any such forced choice at the beginning. I am only counting restrictions coming from three corners already filled in the original matrix, not from rectangles with two, one, or no filled corners. In those other cases, more corners would still need to be filled before we could get the pattern; they do not by themselves decide the blank's value right now.
+
+Assume there is at least one blank. At each blank, we can try either 0 or 1 against the original filled entries without immediately creating a diagonal rectangle. Must a completion exist? Can you state the conjecture properly and try to prove it or find a counterexample?

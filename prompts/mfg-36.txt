@@ -1,0 +1,12 @@
+I want to check a simple idea about filling Boolean matrices. Take a matrix in {0,1,b}^{m x n}, where b means blank. We fill the blanks with 0 or 1 without changing the other entries. The forbidden submatrix is the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+We may pick any two rows and any two columns, even nonconsecutive ones, but keep their order. The antidiagonal pattern is allowed. The starting entries do not already contain the displayed rectangle.
+
+Sometimes three corners are already filled and one choice at the blank corner would give this pattern, forcing us to use the other value. I only mean that immediate restriction from three filled corners. A rectangle with fewer than three other corners filled does not force a blank in this sense.
+
+Suppose we have at least one blank, and both 0 and 1 can be tried at each blank separately without immediately completing the pattern with the original filled entries. Is that enough to ensure we can finish filling it? Can you formulate the conjecture and see whether it can be proved or disproved?

@@ -1,0 +1,12 @@
+I have been thinking about whether the first forced moves are the essential difficulty in a Boolean matrix filling problem. Suppose we are given a partially filled matrix in {0,1,b}^{m x n}. A b is a blank that needs either 0 or 1, and all the entries already filled are left unchanged. We are looking for a filling that avoids the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. Any two rows and any two columns can be used to form the rectangle; they do not need to be consecutive. The order of the selected rows and columns is preserved. We are not also banning the antidiagonal pattern. Assume the bits we have been given do not already contain the forbidden rectangle.
+
+What can go wrong immediately is that a blank has already lost one of its two possible values. Three corners of a rectangle are filled, and putting one bit at the fourth corner would give the displayed pattern. That forces us to choose the other bit. In calling a blank forced, I only mean restrictions of this sort from three corners filled in the starting matrix. A rectangle with two, one, or zero other corners filled does not count, even if it might impose a restriction later.
+
+What I want to know is whether there can still be an obstruction when none of these forced blanks is present initially. Assume there is at least one blank, and trying either 0 or 1 at any single blank in the original matrix does not complete a diagonal rectangle. Must a completion exist? Can you formulate the conjecture suggested by this and prove or disprove it?

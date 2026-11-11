@@ -1,0 +1,12 @@
+We are given a partially filled matrix in {0,1,b}^{m x n}. Every b is a blank that we may replace by 0 or 1, and the given 0s and 1s cannot change. I am interested in whether we can fill it without producing the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. The two rows and two columns can be any ones we choose, not necessarily adjacent. We keep their order, so the antidiagonal pattern is a different arrangement and is allowed here. Suppose the entries already filled do not contain a diagonal rectangle.
+
+If the other three corners of a rectangle are already filled, we may know immediately that a blank must be 0 or must be 1. Choosing the wrong bit would complete the forbidden rectangle. Such restrictions can make some partial matrices impossible to finish. But what if every blank initially has no restriction of this sort? There is at least one blank, and either bit can go in any one blank at the start without forming a diagonal rectangle with the original filled entries. We leave the other blanks unfilled when considering each bit. Does that mean we can always find a filling? If only two, one, or zero other corners of a rectangle are filled, I do not count that as forcing a blank, even though later choices may change the situation.
+
+Can you state this as a conjecture and try to prove or disprove it?

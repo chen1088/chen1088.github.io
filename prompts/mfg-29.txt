@@ -1,0 +1,12 @@
+Consider a matrix in {0,1,b}^{m x n}, where b stands for an entry that has not yet been filled. We can replace every b by either 0 or 1, but the existing entries must stay. We are trying to complete the matrix without the following diagonal rectangle appearing as a submatrix:
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+The submatrix can come from any two rows and any two columns, not necessarily neighboring ones, and their order is preserved. The antidiagonal pattern is not excluded. We assume that none of these diagonal rectangles is already present among the filled entries.
+
+There is an immediate restriction when a blank is the last unfilled corner of a rectangle. If the three filled corners would give the forbidden pattern for one value of the blank, we are forced to use the other value. Restrictions of this sort can prevent a completion. My question is whether trouble is still possible when no blank is forced in the starting matrix. For this question, a blank does not count as forced merely because it belongs to a rectangle with two, one, or zero other filled corners.
+
+Suppose there is at least one blank. For every blank, neither 0 nor 1 would immediately create a diagonal rectangle with the original filled entries if we tried it there alone. Does the whole matrix always admit a filling avoiding diagonal rectangles? Please formulate the conjecture and prove or disprove it.

@@ -1,0 +1,12 @@
+Suppose we want to complete a Boolean matrix, but some entries have already been chosen for us. Write the partial matrix as {0,1,b}^{m x n}, where the b entries are blanks. We may fill each b with 0 or 1, leaving the other entries unchanged. The completed matrix must not contain the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. The two rows and two columns can be chosen anywhere, not necessarily next to one another. We keep their original order, so the antidiagonal version is allowed. Assume the entries already filled do not themselves contain a diagonal rectangle.
+
+There are cases where a blank cannot be chosen freely even at the beginning. Three other corners of a rectangle may already be filled so that one bit at the blank immediately creates the forbidden pattern. Then we have to choose the other bit. Such restrictions can stop us from completing the matrix. But what if the starting matrix has no forced blanks like this? A rectangle with fewer than three other filled corners is not enough to call a blank forced here.
+
+Assume there is at least one blank, and either 0 or 1 can be put in any single blank without forming a diagonal rectangle with the original filled entries. Can the matrix always be completed? Can you help formulate the conjecture and either prove it or find a counterexample?

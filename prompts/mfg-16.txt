@@ -1,0 +1,12 @@
+Suppose we have some 0s and 1s written in an m by n matrix and leave the remaining entries blank. Write this as a matrix in {0,1,b}^{m x n}, with b for a blank. We need to fill those blanks with bits, keeping everything already written, so that we do not get
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. This is what I mean by a diagonal rectangle. Any two rows and any two columns may be picked, including nonconsecutive ones, but their order is preserved. So an antidiagonal rectangle does not violate this particular rule. We start with no diagonal rectangle already formed by the filled entries.
+
+A blank may already be forced because the other three corners of a rectangle are filled. One choice would complete the forbidden rectangle, which means we have to use the other bit. These forced choices can make the whole filling impossible. What I would like to ask is whether this can happen when both choices are open at every blank initially: putting either 0 or 1 in any one blank makes no diagonal rectangle with the original entries, while all other blanks are left unfilled. Assume we have at least one blank. I am not calling a blank forced because of a rectangle with only zero, one, or two other corners filled; all three must already be there.
+
+Under this condition, can we always fill the matrix? Can you formulate the conjecture and prove it or disprove it?

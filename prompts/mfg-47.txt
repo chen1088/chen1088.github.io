@@ -1,0 +1,12 @@
+I want to understand a matrix filling question. We have a partial matrix in {0,1,b}^{m x n}; each b needs a 0 or 1, and the existing entries stay fixed. The pattern to avoid is the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+picked from any two rows and any two columns in their original order. They need not be adjacent, and the antidiagonal pattern is allowed. There is no diagonal rectangle already made from the given entries.
+
+Sometimes the three filled corners of a rectangle force a blank at its last corner: one bit would make the forbidden pattern, so we have to use the other. These forced choices can cause a matrix to be impossible to fill. What about a starting matrix with at least one blank where either 0 or 1 can go in any single blank without immediately completing the pattern with the given entries? Rectangles with only zero, one, or two filled corners do not count as forcing a blank here.
+
+Does that guarantee a complete filling without a diagonal rectangle? Can you formulate this conjecture and work out a proof or a counterexample?

@@ -1,0 +1,14 @@
+I would like to separate the immediate forced choices from the rest of a matrix filling problem. We have a partially filled matrix in {0,1,b}^{m x n}, where b is a blank to be replaced by 0 or 1. The entries that have already been filled must stay as they are.
+
+We want to complete the matrix without finding the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. We can use any two rows and any two columns for this, even when they are not next to each other. We preserve the order of both, so the antidiagonal pattern is not something we are trying to exclude. The entries already given do not themselves contain the displayed rectangle.
+
+There can be a blank where one choice immediately completes this rectangle because all three other corners are filled. That is a forced blank, since it has to take the other value. I am only talking about this direct restriction in the starting matrix. If only two, one, or zero other corners of a rectangle are filled, its blanks are not forced on that account.
+
+What if we start with at least one blank, but there are no such forced blanks anywhere? Whichever blank we pick, putting either bit there by itself would not complete a diagonal rectangle with the entries already given. Does that guarantee that a complete filling exists? Can you help me put this into a conjecture and then prove or disprove it?

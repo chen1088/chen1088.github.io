@@ -1,0 +1,10 @@
+Can we always finish a partially filled matrix if no blank is forced initially? The matrix is in {0,1,b}^{m x n}, where b means a blank to be filled with 0 or 1. We keep the existing entries and want to avoid
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+on any two rows and any two columns, preserving their order. They need not be adjacent. The antidiagonal pattern is allowed, and we assume the given entries do not already contain the displayed diagonal rectangle.
+
+By a forced blank, I mean one where three other corners are already filled, so choosing one bit immediately completes the forbidden rectangle. Rectangles with only zero, one, or two other filled corners do not count. Suppose there is at least one blank, and either bit can go in any single blank without making a diagonal rectangle with the original entries, with the other blanks still unfilled. Must a completion exist? Can you formulate the conjecture and prove it or find a counterexample?

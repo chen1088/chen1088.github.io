@@ -5,8 +5,8 @@ $$\begin{bmatrix}
 0 & 1
 \end{bmatrix}$$
 
-as a submatrix. Here we can choose any two rows and any two columns, with their order preserved. They need not be consecutive. I mean this particular diagonal rectangle; an antidiagonal arrangement does not count as one.
+as a submatrix. Here we can choose any two rows and any two columns, with their order preserved. They need not be consecutive. I mean this particular diagonal rectangle; an antidiagonal arrangement does not count as one. We start without any diagonal rectangle already completed.
 
-Some blanks may have an immediate forced value. For example, if the other three corners of a rectangle are already filled, choosing one bit for the blank might complete the unwanted pattern, so we have to choose the other bit. Those restrictions can make it impossible to finish. But I wonder whether a matrix without any such forced blanks can still be impossible to fill. Assume it has at least one blank, and none is forced at the outset. Rectangles with fewer than three other filled corners do not count as forcing anything here, even if they might matter after more blanks are filled.
+Some blanks may have an immediate forced value. For example, if the other three corners of a rectangle are already filled, choosing one bit for the blank might complete the unwanted pattern, so we have to choose the other bit. Those restrictions can make it impossible to finish. But I wonder whether a matrix without any such forced blanks can still be impossible to fill. Assume it has at least one blank, and neither 0 nor 1 is ruled out at any blank by three already filled corners at the start. Rectangles with fewer than three other filled corners do not count as forcing anything here, even if they might matter after more blanks are filled.
 
 Can you formulate the conjecture suggested by this and either prove it or disprove it?

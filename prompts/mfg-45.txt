@@ -1,0 +1,12 @@
+The matrix problem I have in mind starts with entries in {0,1,b}^{m x n}. A b is a blank, and we are free to replace it by 0 or 1. The entries already written in the matrix are fixed. We want a filling that never contains the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+on any two rows and any two columns. These rows or columns need not be consecutive. We retain their original order, so it is this diagonal pattern we forbid, rather than the antidiagonal one. The starting entries themselves do not already contain that pattern.
+
+A blank might already have a forced value because the other three corners of some rectangle are filled. Putting the wrong bit there would immediately give the forbidden pattern. It makes sense that these forced choices can cause a matrix to be impossible to finish. But if none of the blanks has a forced value when we start, is there still something that can go wrong? I am not counting rectangles with zero, one, or two filled corners as forcing any of their blanks.
+
+Assume there is at least one blank. Checking the blanks one at a time against the given entries, each can initially take either 0 or 1 without making a diagonal rectangle. I would like to know whether a full filling avoiding diagonal rectangles always exists. Can you formulate this conjecture and see whether there is a proof or a counterexample?

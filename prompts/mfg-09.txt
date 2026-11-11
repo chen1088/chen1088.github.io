@@ -5,8 +5,8 @@ $$\begin{bmatrix}
 0 & 1
 \end{bmatrix}$$
 
-as a submatrix. This rectangle can come from any two rows and any two columns, with the order preserved. In particular, the antidiagonal pattern is allowed; it is the displayed diagonal pattern that we want to avoid.
+as a submatrix. This rectangle can come from any two rows and any two columns, with the order preserved. In particular, the antidiagonal pattern is allowed; it is the displayed diagonal pattern that we want to avoid. Assume that pattern is not already present among the filled entries.
 
 There is an obvious sort of forced move. If three corners of a rectangle are filled already, a blank at the remaining corner may have to be 0 or have to be 1. Otherwise we get the forbidden rectangle right away. Such restrictions can stop us from filling the matrix. My question is about the case where there are no forced moves initially. Rectangles with fewer than three filled corners do not count as forcing a blank, even if later choices might create a restriction there.
 
-If the matrix has at least one blank and none of its blanks is forced by three already filled corners, is a complete filling always possible? Can you formulate this conjecture and either prove it or find a counterexample?
+If the matrix has at least one blank and neither bit is ruled out at any blank by three corners filled in the starting matrix, is a complete filling always possible? Can you formulate this conjecture and either prove it or find a counterexample?

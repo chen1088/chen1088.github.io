@@ -1,0 +1,12 @@
+Can we understand when a partially filled Boolean matrix can be finished? Write the starting matrix as an element of {0,1,b}^{m x n}, using b for a blank that needs a 0 or 1. The given entries must stay as they are. The condition on the finished matrix is that it should not contain
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. I will call this a diagonal rectangle. We can pick any two rows and any two columns, including ones that are not consecutive, but keep their order. An antidiagonal rectangle is not forbidden by this rule. The given 0s and 1s do not already form a diagonal rectangle.
+
+There is an immediate issue if three corners of a rectangle are already filled. They may force a blank at the fourth corner to one value, because the other value would create a diagonal rectangle. These restrictions can make completion impossible. Now suppose we do not have any of these forced blanks to start with. I only mean forcing from three other filled corners; a rectangle with two or fewer corners filled does not count.
+
+My guess is that if there is at least one blank and either bit can go into any one blank initially without immediately creating the pattern, we can fill everything while avoiding it. Can you formulate this conjecture and either prove it or find a counterexample?

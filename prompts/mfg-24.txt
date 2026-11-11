@@ -1,0 +1,10 @@
+We have a partially filled matrix in {0,1,b}^{m x n}. Each b is a blank to be filled with 0 or 1, and existing entries cannot change. We want no diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+on any two rows and columns, even nonadjacent ones, keeping their order. The antidiagonal is allowed, and the given entries do not already contain the forbidden rectangle.
+
+Sometimes three filled corners force the blank fourth corner: one bit would create that pattern, so the other must be used. Fewer than three other filled corners do not count as forcing a blank here. But suppose we have at least one blank, and trying either 0 or 1 in any single blank, leaving the others blank, never immediately creates a diagonal rectangle. Does a complete filling always exist? Can you formulate the conjecture and prove or disprove it?

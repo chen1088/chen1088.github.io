@@ -1,0 +1,12 @@
+Consider filling a matrix whose entries come from {0,1,b}, where b means a blank. The matrix has size m x n, so we can write it as an element of {0,1,b}^{m x n}. We keep all the given 0s and 1s and choose a bit for each blank. The pattern we do not want to see at the end is
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+on any two rows and any two columns. These rows and columns do not need to be consecutive, but we preserve their order. An antidiagonal rectangle is allowed; it is this particular diagonal rectangle that matters. Assume the given entries do not already contain one.
+
+What makes the question interesting to me is that a blank can sometimes be forced before we do anything. Three corners are already filled, and one choice for the remaining corner would give the forbidden rectangle. So we must make the other choice, and such restrictions can lead to a matrix with no completion. What if none of the blanks has this problem initially? I mean that either 0 or 1 can be put in any single blank without completing a rectangle with the original entries, while the other blanks stay blank. Assume there is at least one blank. Rectangles with fewer than three other corners filled do not count as forcing a blank here.
+
+Does the absence of these forced blanks guarantee that we can finish? Could you state the conjecture and prove or disprove it?

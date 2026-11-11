@@ -5,8 +5,8 @@ $$\begin{bmatrix}
 0 & 1
 \end{bmatrix}$$
 
-anywhere in the completed matrix. We can take the two rows and two columns from anywhere, but we keep their original order. So we are looking for this diagonal pattern, not its antidiagonal version.
+anywhere in the completed matrix. We can take the two rows and two columns from anywhere, but we keep their original order. So we are looking for this diagonal pattern, not its antidiagonal version. The starting matrix does not already contain one of these diagonal rectangles.
 
-Sometimes a blank already has to be 0 or already has to be 1, because three other corners of a rectangle are filled and one choice would give the forbidden pattern. These immediate restrictions can make a complete filling impossible. What I wonder is whether they are the only problem. If the matrix has at least one blank, and no blank is forced in this way initially, must there be a way to fill it? Having just one or two other corners filled does not count as forcing a blank; the other three need to be there already.
+Sometimes a blank already has to be 0 or already has to be 1, because three other corners of a rectangle are filled and one choice would give the forbidden pattern. These immediate restrictions can make a complete filling impossible. What I wonder is whether they are the only problem. If the matrix has at least one blank, and both choices at every blank are initially safe from these three-corner restrictions, must there be a way to fill it? Having just one or two other corners filled does not count as forcing a blank; the other three need to be there already.
 
 Could you help me state this as a conjecture and then try to prove it or find a counterexample?

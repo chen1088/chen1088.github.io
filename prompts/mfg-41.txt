@@ -1,0 +1,12 @@
+Here is a question about filling in a matrix. We start with something in {0,1,b}^{m x n}, where b marks a blank. We can put 0 or 1 in each blank, but the entries already given cannot be changed. The aim is to finish without a diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. We get a submatrix by choosing any two rows and any two columns, keeping their order. They need not be next to each other, and the antidiagonal pattern is not the one being forbidden. There is not already such a rectangle among the entries that have been filled.
+
+One simple obstruction comes from a rectangle whose other three corners are already filled. One value at the blank would give the unwanted pattern, so we are forced to use the other value. Restrictions like this can leave us unable to finish. I want to know what happens when there is no such restriction at the beginning. A rectangle with only two, one, or zero filled corners does not count as forcing a blank here.
+
+Suppose there is at least one blank, and either 0 or 1 can go in any single blank at the start without immediately making a diagonal rectangle. Is it always possible to fill the whole matrix? Can you formulate the conjecture and prove or disprove it?

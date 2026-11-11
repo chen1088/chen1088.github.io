@@ -1,0 +1,12 @@
+When three corners of a rectangle have already been filled, the remaining corner may have to take a particular value. I am wondering whether avoiding all such immediate restrictions makes the following problem solvable.
+
+We have a matrix in {0,1,b}^{m x n}, with b marking a blank. Fill each b with 0 or 1, leaving the given bits alone, so that the result avoids
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. This uses any two rows and columns in their existing order, not just neighboring ones. The antidiagonal arrangement is allowed, and the given bits do not already form the forbidden pattern.
+
+A blank is forced if three other already-filled corners make one value impossible there. I do not mean restrictions from rectangles with only zero, one, or two other filled corners. Suppose there is at least one blank, and either bit can be placed in any one blank initially, leaving the other blanks alone, without completing the displayed rectangle. Must a complete filling exist? Can you state the conjecture and prove or disprove it?

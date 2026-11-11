@@ -1,0 +1,12 @@
+Here is a matrix filling conjecture. We have a matrix in {0,1,b}^{m x n}, with b marking a blank. We fill the blanks with 0s and 1s, leaving the given entries unchanged, and try to avoid
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. Its rows and columns can be any two rows and any two columns, even far apart, but we preserve their order. We are not excluding the antidiagonal pattern. Suppose the given entries do not already form this diagonal rectangle.
+
+When three corners of a rectangle are filled, one value at the blank corner may create the pattern, forcing us to use the other value. A rectangle with fewer than three other filled corners does not force a blank in this sense. But what if there is at least one blank, and either 0 or 1 can go in any single blank without making a diagonal rectangle with the original entries, leaving the other blanks unfilled? Is that enough to guarantee a complete filling?
+
+Can you formulate this conjecture and see whether it can be proved or disproved?

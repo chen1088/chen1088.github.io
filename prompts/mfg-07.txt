@@ -5,8 +5,8 @@ $$\begin{bmatrix}
 0 & 1
 \end{bmatrix}$$
 
-on any two rows and any two columns. The rows and columns stay in their original order when we pick them, so the antidiagonal pattern is different and is not what we are trying to avoid.
+on any two rows and any two columns. The rows and columns stay in their original order when we pick them, so the antidiagonal pattern is different and is not what we are trying to avoid. We assume the given entries do not already make a diagonal rectangle.
 
 The first thing I noticed is that a blank can already have its value decided by three filled corners. One choice would complete a diagonal rectangle, so we must use the other choice. This can make a partial matrix impossible to fill. What I would like to understand is whether these immediate restrictions are the whole problem. By a forced blank I mean one forced by three corners that are filled in the given matrix. If a rectangle has zero, one, or two filled corners, I am not calling any of its blanks forced just because they belong to that rectangle.
 
-Now take a partial matrix with at least one blank and no forced blanks. Is there always a way to fill it completely while avoiding diagonal rectangles? Please formulate the conjecture carefully and see whether it can be proved or disproved.
+Now take a partial matrix with at least one blank, where neither 0 nor 1 is ruled out at any blank by the three-corner check at the start. Is there always a way to fill it completely while avoiding diagonal rectangles? Please formulate the conjecture carefully and see whether it can be proved or disproved.

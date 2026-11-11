@@ -1,0 +1,12 @@
+We have a matrix in {0,1,b}^{m x n}, with some entries filled and b marking the blanks. We would like to replace all the blanks by 0 or 1, leaving the given entries unchanged. A filling is supposed to avoid a diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. We get such a submatrix by choosing any two rows and any two columns, even nonadjacent ones, while keeping their order. The antidiagonal pattern is not forbidden by this rule. We assume that the filled entries do not already form a diagonal rectangle.
+
+There is a straightforward obstruction involving a blank and three filled corners. If one value for the blank completes the pattern above, then that value is ruled out and the blank is forced to take the other value. Such immediate restrictions can make it impossible to fill a matrix. I want to understand what happens without them. Suppose there is at least one blank, and either value can be put in each blank on its own without making a diagonal rectangle with the given entries. All the other blanks are still blank while we consider that choice. Can we always find a complete filling that avoids diagonal rectangles? A rectangle with only two, one, or zero other filled corners does not count as forcing a blank, since those corners have not all been decided yet.
+
+Can you help formulate this conjecture and see whether it is true or false?

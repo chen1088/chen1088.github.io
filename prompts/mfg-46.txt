@@ -1,0 +1,12 @@
+Suppose someone gives us a matrix in {0,1,b}^{m x n}, with some entries left blank as b. Our job is to put a 0 or a 1 in each blank and leave all the given entries alone. We are trying not to create a diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. Any two rows and any two columns can be used, even if there are other rows or columns between them. They keep their order, so we do not also rule out the antidiagonal pattern. The matrix we are given does not already have a diagonal rectangle among its filled entries.
+
+There are sometimes forced moves: if the other three corners of a rectangle are already filled, one bit at the remaining blank may complete the diagonal rectangle, forcing us to use the other bit. Restrictions of this sort can prevent a complete filling. I am wondering whether having no forced moves initially is enough to get around the problem. By a forced move, I mean this direct restriction from three filled corners, not a rectangle that has only zero, one, or two corners filled so far.
+
+Take an instance with at least one blank where both 0 and 1 remain possible at each blank initially, meaning either choice at any single blank avoids an immediate diagonal rectangle with the given entries. Can we always fill the matrix successfully? Could you formulate that as a conjecture and see whether there is a proof or a counterexample?

@@ -1,0 +1,14 @@
+There is a local issue in a matrix filling question that seems important. A blank can be the last corner of a rectangle whose other three corners are filled. Then one value might immediately give the pattern we do not want, so we have to use the other value. I want to understand what is left of the problem when there are no forced choices like that before we start.
+
+We have a matrix in {0,1,b}^{m x n}. The b entries are blanks to be filled with 0 or 1, and the given entries cannot be changed. We want to avoid the diagonal rectangle
+
+$$\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}$$
+
+as a submatrix. Any two rows and any two columns can be picked, including ones separated by other rows or columns. Their original order is kept. So an antidiagonal arrangement is not the pattern being excluded. Assume the entries already filled do not themselves contain a diagonal rectangle; the issue is whether we can finish the remaining entries.
+
+A blank is only called forced here if the other three corners of some rectangle are already filled in the starting matrix and one of its possible values would complete the displayed pattern. Having two, one, or zero other corners filled does not count. I am not asking whether later choices might create restrictions, just whether there are any at the outset.
+
+Suppose there is at least one blank and none is forced at the start. At each blank, trying either bit on its own, before making any other choices, does not create a diagonal rectangle. Can we always complete the matrix? Could you formulate this conjecture and try to prove it or find a counterexample?
